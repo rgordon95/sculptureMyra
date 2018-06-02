@@ -1,3 +1,5 @@
+/*Main Section*/
+
 .row-header {
   margin: 0px auto;
   padding: 0px auto;
@@ -30,10 +32,24 @@
  }
 
 body {
+  margin: 0px auto;
   background-color: rgb(230, 205, 235);
   padding: 50px 0px 0px 0px;
   z-index: 0;
 }
+
+content ul {
+  border: 4px;
+  border-style: outset;
+  border-color: #9575CD;
+}
+
+ content ul img {
+   min-height: 100px;
+   max-height: 100px;
+   min-width: 100px;
+   max-width: 200px;
+ }
 
 .navbar-inverse {
   background-color: #512DA8;
@@ -46,25 +62,151 @@ body {
     padding: 10px;
 }
 
+h1, h4 {
+  font-family: 'Courgette', cursive;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.modal label, .modal option {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#materialChoice {
+  font-weight: normal;
+}
+
+.modal label {
+  font-weight: bold;
+
+}
+
+.card img {
+  height: 300px;
+  width: 100%;
+  border-style: inset;
+  border-color: #512DA8;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #999999;
+}
+
+/*Index*/
+
 .carousel {
-  background: #721343;
+    border-style: inset;
+    border-radius: 3px;
+    border-color: #512DA8;
+    box-shadow: 5px 5px 5px #999999;
+
+
 }
 
 .carousel-item {
   height: 300px;
 }
 
-.carousel-item img {
+.carousel .carousel-item img {
+      min-height: 300px;
+      width: 100%;
+    }
 
-  min-height: 300px;
+#carousel-button {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  color: floralwhite;
+  background-color: darkgreen;
 }
 
+
+
 main ul {
-  background-color: #808080;
-  color: white;
+  color: #512DA8;
+
 
 }
 
 .resume {
   margin-top: 30px;
+}
+
+
+/*Gallery Section*/
+
+li a {
+  color: #523DA8;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: floralwhite;
+}
+
+.dropdown {
+  color: lightgray;
+}
+
+.dropdown:active, .dropdown:focus, .dropdown:hover {
+   color: floralwhite;
+}
+
+
+.card-img-top {
+max-width: 100%;
+height: auto;
+}
+
+.card {
+  border-style: solid;
+  border-color: #512DA8;
+  box-shadow: 5px 5px 30px #999999;
+}
+
+
+.modal-header {
+	background: #512DA8;
+}
+	.modal-title {
+		color: floralwhite;
+	}
+
+	.modal-header .close {
+		color: floralwhite;
+}
+
+.modal-body {
+	background: rgb(230, 205, 235);
+}
+
+.modal-footer {
+	background: #9575CD;
+}
+
+.form-group label {
+  color: #512DA8;
+}
+/*gallery subsections*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #512DA8; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+footer a {
+  color: floralwhite;
 }

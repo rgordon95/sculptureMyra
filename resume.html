@@ -1,92 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
   <!-- Required meta tags always come first -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<meta http-equiv='x-ua-compatible' content='ie=edge'>
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/bootstrap-social.css">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel='stylesheet' href='css/bootstrapsocial.css'>
+<link rel='stylesheet' href='css/styles.css'>
+<link href='https://fonts.googleapis.com/css?family=Courgette|Source+Sans+Pro' rel='stylesheet'>
 
     <title>Resume</title>
 </head>
 
 <body>  <!-- Begin Body & Navbar -->
-  <nav class="nav navbar navbar-inverse navbar-toggleable-sm fixed-top">
-      <div class="container"> <!-- Container 1 -->
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-            <span class="navbar-toggler-icon"></span>
+  <nav class='nav navbar navbar-inverse navbar-toggleable-sm fixed-top'>
+      <div class='container'> <!-- Container 1 -->
+         <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbar'>
+            <span class='navbar-toggler-icon'></span>
          </button>
-          <a class="navbar-brand" href="#"> <img src="img/logo.png" height="30" width="41"> </a>
-              <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./gallery.html"><span class="fa fa-info fa-lg"></span> Gallery</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="./resume.html"><span class="fa fa-list fa-lg"></span> Resume</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+             <!--     <a class='navbar-brand' href='#'> <img src='img/stone/union1.jpg' height='30' width='41'> </a>  removed navbar logo img -->
+              <div class='collapse navbar-collapse' id='navbar'>
+              <ul class='navbar-nav mr-auto'>
+                  <li class='nav-item'><a class='nav-link' href='./index.html'><span class='fa fa-home fa-lg'></span> Home</a></li>
+                  <li class='dropdown hide'>
+                    <button class='nav nav-item dropdown dropdown-toggle-split dropdown-toggle btn btn-link ' type='button' href='#' id='dropdownMenuLink'
+                     data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> <span class='fa fa-picture-o fa-lg'></span> Gallery
+                   </button>
+
+                      <div class='dropdown-menu' aria-labelledby='dropdownMenuLink'>
+                        <a class='dropdown-item' href='../gallery.html'>All</a>
+                              <div class='dropdown-divider'></div>
+                        <a class='dropdown-item' href='../gallery/stone.html'>Stone</a>
+                        <a class='dropdown-item' href='../gallery/wood.html'>Wood</a>
+                        <a class='dropdown-item' href='../gallery/other.html'>Other</a>
+                      </div>
+
+                  </li>
+                  <li class='nav-item active'><a class='nav-link' href='./resume.html'><span class='fa fa-list fa-lg'></span> Resume</a></li>
+                  <li class='nav-item'><a class='nav-link' href='./contact.html'><span class='fa fa-address-card fa-lg'></span> Contact</a></li>
               </ul>
 
             </div> <!-- Close navbar div-->
       </div> <!--Close container 1 -->
   </nav> <!-- End Nav -->
 
-  <header class="jumbotron"> <!-- Website Header -->
-      <div class="container"> <!-- Container 2 -->
-          <div class="row row-header">
-              <div class="col-12 col-sm-6">
+  <div id='inquiryModal' class='modal fade' role='dialog' tabindex='-1'>
+    <div class='modal-dialog' role='content'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+            <h4 class='modal-title'>Inquire</h4>
+            <button type='button' class='close' data-dismiss='modal'>
+              &times;
+            </button>
+        </div> <!-- close modal header -->
+          <div class='modal-body'>
+              <div class='container-fluid'>
+            <form class='form-inline'>
+              <div class='form-group row'>
+                  <label class='sr-only' for='exampleInputPassword3'>Name</label>
+                  <label class='col' for='exampleInputPassword3'>Name</label>
+                  <input type='text' class='form-control form-control-sm mr-1' id='text' placeholder='First & Last Name' required>
+              </div>
+                  <div class='form-group row'>
+                      <label class='sr-only' for='exampleInputEmail3'>Email address</label>
+                      <label class='col' for='exampleInputEmail3'>Email address</label>
+                      <input type='email' class='form-control form-control-sm mr-1' id='exampleInputEmail3' placeholder='Enter email' required>
+                  </div>
+                  <div class="form-group">
+                    <label for="sel1"><strong>Select Piece:</strong></label>
+                    <select class="form-control" id="sel1">
+                      <option> Custom </option>
+                      <option>All Ears</option>
+                      <option>All My Children</option>
+                      <option>Caduceus</option>
+                      <option>Cubic I</option>
+                      <option>Cubic II</option>
+                      <option>El Toro</option>
+                      <option>Entre Nous</option>
+                      <option>Eye To Eye</option>
+                      <option>Family</option>
+                      <option>Flying</option>
+                      <option>Free Form</option>
+                      <option>Generations</option>
+                      <option>Heart of the Matter</option>
+                      <option>Legacy</option>
+                      <option>Locked In City</option>
+                      <option>Luna Landing</option>
+                      <option>Luna Persona</option>
+                      <option>My Bluestone</option>
+                      <option>Oaxaca</option>
+                      <option>Orbits</option>
+                      <option>Pietrasanta</option>
+                      <option>Pink Lady</option>
+                      <option>Precious</option>
+                      <option>Rage</option>
+                      <option>Ruins</option>
+                      <option>Sail Away</option>
+                      <option>Seeress</option>
+                      <option>Serenity</option>
+                      <option>Study in White</option>
+                      <option>Tension</option>
+                      <option>Torso I</option>
+                      <option>Totem</option>
+                      <option>Trio</option>
+                      <option>Union</option>
+                      <option>Whisper</option>
+                      <option>Whither Thou Goest</option>
+                      <option>Younger Than Springtime</option>
+                    </select>
+                  </div>
+
+
+                  <div class="form form-group row">
+                      <label for="material" class="col">Material:</label>
+                                <label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="1"><span class='custom-control-indicator' checked></span>Alabaster</label>
+                                <label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="3"><span class='custom-control-indicator'></span>Teak</label>
+                                <label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="4"><span class='custom-control-indicator'></span>Limestone</label>
+                                <label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="5"><span class='custom-control-indicator'></span>Terracotta</label>
+                                <label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="6"><span class='custom-control-indicator'></span>Other</label>
+                 </div>
+
+                  <div class='form-group row'>
+                      <label class='sr-only'>Desired Price</label>
+                      <label class='col'>Desired Price</label>
+                      <input type='text' class='form-control form-control-sm mr-1' id='' placeholder='Enter Price'>
+                  </div>
+
+                  <div class='form-group row'>
+                      <label class='sr-only' for='Description of piece'>Description Of Piece</label>
+                      <label class='col col-12' for='Description of piece'> Description Of Piece</label>
+                  <textarea class='col' rows='5' placeholder='Describe your request here...'></textarea>
+                </div>
+              </form>
+            </div>
+            </div> <!-- close modal body -->
+            <div class='modal-footer'>
+              <button type='button' class='btn btn-default btn-sm' data-dismiss='modal'>Cancel</button>
+              <button type='submit' class='btn btn-primary btn-sm'>Request Quote</button>
+            </div> <!-- close modal footer -->
+         </div> <!--close modal content -->
+      </div> <!--close modal dialog -->
+   </div> <!-- close modal -->
+
+
+  <header class='jumbotron'> <!-- Website Header -->
+      <div class='container'> <!-- Container 2 -->
+
+          <div class='row row-header'>
+              <div class='col col-12 col-sm-6'>
                   <h1>Resume</h1>
-                  <p class="hidden-xs-down">Over the years Myra has collected many accolades and awards for her beautiful work. Some of these are listed below.</p>
+                  <p class='resume'>Over the years Myra has collected many accolades and awards for her beautiful work. Some of these are listed below.</p>
               </div> <!-- Close H1 Title Div -->
 
-                <div class="col-12 col-sm-3 align-self-center">
-                  <img src="img/logo.png" class="img-fluid">
+                <div class='col-12 col-sm-3 align-self-center'>
+                  <img src='img/logo.png' class='img-fluid'>
                 </div> <!-- Close Image Div -->
 
                 <div class='col-12 col-sm-3 align-self-center'>
-                 <a type="button" class="btn btn-block btn-sm btn-warning"
+                 <a type='button' class='btn btn-block btn-sm btn-warning'
                     data-toggle='modal' data-target='#inquiryModal'data-html='true'
-                   class="text-white">Make an Inquiry </a>
-                </div>
+                   class='text-white'>Make an Inquiry </a>
+                </div> <!-- End col -->
+              </div> <!-- close row -->
         </div>
       </div>  <!-- Close Con2 row row header div -->
   </header> <!-- Close Header -->
 
 
 <div class='container resume'>
-<main class='mx-auto'>
-  <ul>
-        <li>First Prize Sculp    -   Mamaroneck Artist's Guild  -  2008</li>
-        <li>First Prize Sculp    -   Greenwich Art Society   -   2007</li>
-        <li>First Prize Sculp   -    White Plains Woman's Club  -  2007</li>
-        <li>First Prize Sculp   -    Art Society of Old Greenwi  -   2007</li>
-        <li>Sculpture Prize     -    Rye Art Center  -       2006</li>
-        <li>Sculpture Prize    -     Greenwich Art Society    -    2006</li>
-        <li>Sculpture Third    -     Art Society of Old Greenwich -  2006</li>
-        <li>Sculpture Prize     -     Bedford Art Show -      2005</li>
-        <li>Sculpture Prize - Bedford Art Show -    2004</li>
-        <li>Sculpture Prize - Bedford Art Show    -   2003</li>
-        <li>First Prize - Beaux Arts Finale -   2003</li>
-        <li>Sculpture Prize - Bedford Art Show    -  2002</li>
-        <li>First Prize - Bedford Art Show -   2002</li>
-        <li>First Prize - White Plains Woman's Club    -    2002</li>
-        <li>First Prize - Mamaroneck Artist's Guild  -    2001</li>
-        <li>Third Prize  -      Art Society of Old Greenwich              -           2000</li>
-        <li>First Prize - Art Society of Old Greenwich                 -       1998</li>
-        <li>First Prize - Beaux Art Finale                  -    1997</li>
-        <li>First Prize - Pleasantville Woman's Club                 -    1995</li>
-        <li>Club Award   -     Mamaroneck Artist's Guild               -       1993  </li>
-        <li>Second Place -    Salmagundi                    -   1992</li>
-        <li>Second Place  -   Art Society of Old Greenwich           -              1992</li>
-        <li>Second Place  -   Mari Galleries - Juried Fine Arts    -     1991</li>
-        <li>First Prize   -      Mamaroneck Woman's Club      -     1991</li>
-        <li>Argos Award   -   Putnam Arts Council    -      1990</li>
-        <li>First Prize - Rye Woman's Club - Beaux Arts        -      1988</li>
-
+<main class='mx-auto mb-5'>
+  <button onclick="topFunction()" id="myBtn" type='button' title="Go to top"><i class='fa fa-arrow-up'></i></button>
+  <h1 class='mb-5'> Awards </h1>
+  <ul class='list-group'><strong>
+        <li class='list-group-item list-group-item-success'>First Prize Sculpture    -   Mamaroneck Artist's Guild  -  2008</li>
+        <li class='list-group-item'>First Prize Sculpture    -   Greenwich Art Society   -   2007</li>
+        <li class='list-group-item list-group-item-success'>First Prize Sculpture   -    White Plains Woman's Club  -  2007</li>
+        <li class='list-group-item list-group-item-'>First Prize Sculpture   -    Art Society of Old Greenwich  -   2007</li>
+        <li class='list-group-item list-group-item-success'>First Prize Sculpture     -    Rye Art Center  -       2006</li>
+        <li class='list-group-item list-group-item-'>First Prize Sculpture    -     Greenwich Art Society    -    2006</li>
+        <li class='list-group-item list-group-item-success'>Third Prize Sculpture    -     Art Society of Old Greenwich -  2006</li>
+        <li class='list-group-item list-group-item-'>Sculpture Prize     -     Bedford Art Show -      2005</li>
+        <li class='list-group-item list-group-item-success'>Sculpture Prize - Bedford Art Show -    2004</li>
+        <li class='list-group-item list-group-item-'>Sculpture Prize - Bedford Art Show    -   2003</li>
+        <li class='list-group-item list-group-item-success'>First Prize - Beaux Arts Finale -   2003</li>
+        <li class='list-group-item list-group-item-'>Sculpture Prize - Bedford Art Show    -  2002</li>
+        <li class='list-group-item list-group-item-success'>First Prize - Bedford Art Show -   2002</li>
+        <li class='list-group-item list-group-item-'>First Prize - White Plains Woman's Club    -    2002</li>
+        <li class='list-group-item list-group-item-success'>First Prize - Mamaroneck Artist's Guild  -    2001</li>
+        <li class='list-group-item list-group-item-'>Third Prize  -      Art Society of Old Greenwich              -           2000</li>
+        <li class='list-group-item list-group-item-success'>First Prize - Art Society of Old Greenwich                 -       1998</li>
+        <li class='list-group-item list-group-item-'>First Prize - Beaux Art Finale                  -    1997</li>
+        <li class='list-group-item list-group-item-success'>First Prize - Pleasantville Woman's Club                 -    1995</li>
+        <li class='list-group-item list-group-item-'>Club Award   -     Mamaroneck Artist's Guild               -       1993  </li>
+        <li class='list-group-item list-group-item-success'>Second Place -    Salmagundi                    -   1992</li>
+        <li class='list-group-item list-group-item-'>Second Place  -   Art Society of Old Greenwich           -              1992</li>
+        <li class='list-group-item list-group-item-success'>Second Place  -   Mari Galleries - Juried Fine Arts    -     1991</li>
+        <li class='list-group-item list-group-item-'>First Prize   -      Mamaroneck Woman's Club      -     1991</li>
+        <li class='list-group-item list-group-item-success'>Argos Award   -   Putnam Arts Council    -      1990</li>
+        <li class='list-group-item list-group-item-'>First Prize - Rye Woman's Club - Beaux Arts        -      1988</li>
+      </strong>
   </ul>
 
 
@@ -94,40 +211,37 @@
 </main>
 </div> <!-- close container -->
 
-
-        <footer class="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-5 col-sm-2 offset-1">
-                  <h5>Links</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="./home.html">Home</a></li>
-                      <li><a href="./aboutus.html">About</a></li>
-                      <li><a href="./resume.html">Resume</a></li>
-                      <li><a href="./contactus.html">Contact</a></li>
+        <footer class='footer'>
+      <div class='container'>
+          <div class='row'>
+              <div class='col-5 col-sm-2 offset-1'>
+                  <h5 class='mb-3'>Links</h5>
+                  <ul class='list-unstyled'>
+                      <li><a href='./home.html'>Home</a></li>
+                      <li><a href='./resume.html'>Resume</a></li>
+                      <li><a href='./gallery.html'>Gallery</a></li>
+                      <li><a href='./contact.html'>Contact</a></li>
                   </ul>
               </div>
-              <div class="col-6 col-sm-5">
-                  <h5>Our Address</h5>
+              <div class='col-6 col-sm-5'>
+                  <h5 class='mb-3'>Location</h5>
                   <address>
-                <br>
                 Rye, New York<br>
                 USA<br>
-                 <i class="fa fa-phone fa-lg"></i> (914) 123-4567<br>
-                 <i class="fa fa-envelope fa-lg"></i> <a href="sculpturemyra@optonline.net">sculpturemyra@optonline.net</a>
+                 <i class='fa fa-envelope fa-lg'></i> <a href='Sculpturemyra@optonline.net'>Sculpturemyra@optonline.net</a>
              </address>
               </div>
-              <div class="col col-sm-4 align-self-center">
-                    <div style="text-align:center">
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+              <div class='col col-sm-4 align-self-center'>
+                    <div style='text-align:center'>
+                        <a class='btn btn-social-icon btn-facebook' href='https://www.facebook.com/myra.lehman'><i class='fa fa-facebook'></i></a>
+                        <a class='btn btn-social-icon btn-linkedin' href='https://www.linkedin.com/in/myra-lehman-8690094/'><i class='fa fa-linkedin'></i></a>
+                        <a class='btn btn-social-icon' href='mailto:'><i class='fa fa-envelope-o'></i></a>
                     </div>
                   </div>
               </div>
 
-         <div class="row justify-content-center">
-              <div class="col col-auto">
+         <div class='row justify-content-center'>
+              <div class='col col-auto'>
                   <p>© Copyright 2017 Gordon Enterprises LLC.</p>
               </div>
          </div>
@@ -135,11 +249,33 @@
   </footer>
  </div>
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/tether/dist/js/tether.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+   <!-- jQuery first, then Tether, then Bootstrap JS. -->
+ 	<script
+ 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+ 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ 	  crossorigin="anonymous"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js' crossorigin='anonymous'></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0; // For Chrome, Safari and Opera
+      document.documentElement.scrollTop = 0; // For IE and Firefox
+  }
+
+  </script>
 </body>
 
 </html>
