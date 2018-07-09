@@ -165,6 +165,13 @@ li a:hover {
   color: floralwhite;
 }
 
+
+.dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
+  color: floralwhite;
+  background-color: #9575CD;
+}
+
+
 .card-img-top {
   max-width: 100%;
   height: auto;
@@ -236,4 +243,8 @@ li a:hover {
 
 footer a {
   color: floralwhite;
+  margin-top: 230px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+  width: 100%;
 }
