@@ -14,8 +14,10 @@
 
 .footer {
   background-color: #D1C4E9;
-  margin: 0px auto;
-  padding: 20px 0px 20px 0px;
+  margin-top: 230px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+  width: 100%;
 }
 
 .footer a:hover {
@@ -243,8 +245,5 @@ li a:hover {
 
 footer a {
   color: floralwhite;
-  margin-top: 230px;
-  padding-bottom: 0px;
-  border-bottom: 0px;
-  width: 100%;
+
 }
