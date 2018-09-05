@@ -62,10 +62,6 @@ content ul img {
 }
 
 
-  //contact specific styles
-
-
-
   /* Resize testarea */
   textarea {
   	resize: none;
@@ -85,7 +81,7 @@ content ul img {
   }
 
   #feedback-head {
-    text-align: center; 
+    text-align: center;
   }
 
 .navbar-inverse {
@@ -269,6 +265,11 @@ li a:hover {
   background-color: #555;
   /* Add a dark-grey background on hover */
 }
+
+.sold {
+  font-family: sans-serif;
+}
+
 
 footer a {
   color: floralwhite;
