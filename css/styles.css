@@ -61,6 +61,33 @@ content ul img {
   max-width: 200px;
 }
 
+
+  //contact specific styles
+
+
+
+  /* Resize testarea */
+  textarea {
+  	resize: none;
+  	overflow: scroll;
+  }
+
+  /* All feedback in a card */
+  .card {
+  	margin: auto;
+  	margin-top: 30px;
+  	min-width: 50%;
+  	max-width: 75%;
+  }
+
+  .form-group {
+  	margin-bottom: 15px;
+  }
+
+  #feedback-head {
+    text-align: center; 
+  }
+
 .navbar-inverse {
   background-color: #512DA8;
 }
