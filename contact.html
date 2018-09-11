@@ -288,6 +288,27 @@
 			$('#inquiryBtn').trigger('focus')
 		})
 	</script>
+	<!-- Submit form to php -->
+<script>
+	$("form").on("submit", function(e) {
+		e.preventDefault();
+		if(grecaptcha.getResponse().length !== 0) {
+			$(".btn").prop("disabled", true);
+			$(".btn").attr("value", "Feedback Submitted!");
+		}
+		else {
+			$(".btn").attr("value", "Click captcha");
+		}
+		$.ajax({
+			type: "post",
+			url: "./php/contact_form.php",
+			data: $("form").serialize(),
+			success: function() {
+
+			}
+		})
+	})
+</script>
 </body>
 
 </html>
