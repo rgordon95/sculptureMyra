@@ -16,7 +16,10 @@ gulp.task('browser-sync', function () {
    var files = [
       './*.html',
       './css/*.css',
-      './img/*.{png,jpg,gif}',
+      './img/Other/.{png,jpg,gif}',
+      './img/stone/.{png,jpg,gif}',
+      './img/wood/.{png,jpg,gif}',
+      './gallery/*.html',
       './js/*.js'
    ];
 
@@ -51,6 +54,31 @@ gulp.task('imagemin', function() {
 });
 
 
+// Images
+gulp.task('imageothermin', function() {
+  return gulp.src('./img/Other/*.{png,jpg,gif}')
+    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+    .pipe(gulp.dest('dist/img/Other'));
+});
+
+
+// Images
+gulp.task('imagestonemin', function() {
+  return gulp.src('./img/stone/*.{png,jpg,gif}')
+    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+    .pipe(gulp.dest('dist/img/stone'));
+});
+
+
+// Images
+gulp.task('imagewoodmin', function() {
+  return gulp.src('./img/wood/*.{png,jpg,gif}')
+    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+    .pipe(gulp.dest('dist/img/wood'));
+});
+
+
+
 gulp.task('usemincss', function() {
   return gulp.src('./css/styles.css')
   .pipe(flatmap(function(stream, file){
@@ -79,5 +107,5 @@ gulp.task('usemin', function() {
 });
 
 gulp.task('build',['clean'], function() {
-    gulp.start('copyfonts','imagemin','usemin', 'usemincss');
+    gulp.start('copyfonts','imagemin','usemin', 'imagestonemin', 'imagewoodmin', 'imageothermin', 'usemincss');
 });
