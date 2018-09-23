@@ -1,7 +1,6 @@
 'use strict';
 
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
@@ -12,16 +11,6 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     browserSync = require('browser-sync');
 
-
-    gulp.task('sass', function () {
-  return gulp.src('./css/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-});
-
-gulp.task('sass:watch', function () {
-  gulp.watch('./css/*.scss', ['sass']);
-});
 
 gulp.task('browser-sync', function () {
    var files = [
