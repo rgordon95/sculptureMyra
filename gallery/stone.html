@@ -14,6 +14,7 @@
 	<link rel='stylesheet' href='../css/bootstrapsocial.css'>
 	<link rel='stylesheet' href='../css/styles.css'>
 	<link href='https://fonts.googleapis.com/css?family=Courgette|Source+Sans+Pro' rel='stylesheet'>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -149,8 +150,14 @@
 								<label class='col col-12' for='Description of piece'> Description Of Piece</label>
 								<textarea class='col' rows='5' name='msg' placeholder='Describe your request here...'></textarea>
 							</div>
+
+							<div class='form-group row' id='captcha'>
+								<div class="g-recaptcha" data-sitekey="6LfiwHEUAAAAAMUW375uK9w2Sbr72QZz0OtayF4-"></div>
+							</div>
+
 						</form>
 					</div>
+
 				</div>
 				<!-- close modal body -->
 				<div class='modal-footer'>
