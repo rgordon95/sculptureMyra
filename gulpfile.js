@@ -1,4 +1,4 @@
-'use strict';
+/*jshint esversion: 6*/
 
 var gulp = require('gulp'),
     del = require('del'),
