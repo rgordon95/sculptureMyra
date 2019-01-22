@@ -1,6 +1,6 @@
 /*jshint esversion: 6*/
 
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
