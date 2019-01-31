@@ -319,6 +319,34 @@
 
 			})
 		</script>
+		<!-- Submit form to php -->
+		<script>
+			$("form").on("submit", function(e) {
+				e.preventDefault();
+				if (grecaptcha.getResponse().length !== 0) {
+					$(".btn").prop("disabled", true);
+
+					$.ajax({
+						type: "post",
+						url: "./php/sculpture_inquiry.php",
+						data: $("form").serialize(),
+						success: function() {
+
+						}
+					})
+					$(this).find("input[type=msg], textarea").val("");
+					$(this).find("input[type=phone], input").val("");
+					$(this).find("input[type=email], input").val("");
+					$(this).find("input[type=subject], input").val("");
+					$(this).find("input[type=piece], input").val("");
+					$(this).find("input[type=price], input").val("");
+					$(".btn").attr("value", "Inquiry Submitted!");
+				} else {
+					$(".btn").attr("value", "Click captcha");
+				}
+
+			})
+		</script>
 
 	</body>
 
