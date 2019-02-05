@@ -86,7 +86,7 @@ gulp.task('usemincss', function() {
         .pipe(usemin({
             css: [ rev() ],
             inlinecss: [ cleanCss(), 'concat' ]
-        }))
+        }));
     }))
     .pipe(gulp.dest('dist/css'));
 });
@@ -101,7 +101,7 @@ gulp.task('usegallerymin', function() {
             js: [ uglify(), rev() ],
             inlinejs: [ uglify() ],
             inlinecss: [ cleanCss(), 'concat' ]
-        }))
+        }));
     }))
     .pipe(gulp.dest('dist/gallery/'));
 });
@@ -116,7 +116,7 @@ gulp.task('usemin', function() {
             js: [ uglify(), rev() ],
             inlinejs: [ uglify() ],
             inlinecss: [ cleanCss(), 'concat' ]
-        }))
+        }));
     }))
     .pipe(gulp.dest('dist/'));
 });
