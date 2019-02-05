@@ -152,13 +152,10 @@ p {
   box-shadow: 5px 5px 5px #999999;
 }
 
-.carousel-item {
-  height: 500px;
-}
-
-.carousel .carousel-item img {
-  min-height: 300px;
-  min-width: 80%;
+.carousel-item img {
+  min-height: 250px;
+  max-height: 500px;
+  width: auto;
 }
 
 #carousel-button {
