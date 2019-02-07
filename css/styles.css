@@ -132,9 +132,9 @@ p {
 
 .card img {
   height: 100%;
-  width: 50%;
-  border-style: inset;
-  border-color: #512DA8;
+  width: 75%;
+//  border-style: inset;
+//  border-color: #512DA8;
   border-radius: 3px;
   box-shadow: 5px 5px 5px #999999;
 }
