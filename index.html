@@ -270,94 +270,95 @@
 
 				</div>
 			</div>
-			<!--close container -->
+		</div>
+		<!--close container -->
 
-			<footer class='footer container-fluid'>
+		<footer class='footer container-fluid'>
 
-				<div class='row'>
-					<div class='col-5 col-sm-2 offset-1'>
-						<h5 class='mb-3 mt-2'>Links</h5>
-						<ul class='list-unstyled'>
-							<li><a href='./index.html'>Home</a></li>
-							<li><a href='./resume.html'>Resume</a></li>
-							<li><a href='./gallery.html'>Gallery</a></li>
-							<li><a href='./contact.html'>Contact</a></li>
-						</ul>
-					</div>
-					<div class='col-6 col-sm-5'>
-						<h5 class='mb-3 mt-2'>Location</h5>
-						<address>
-							Rye <br>
-							New York<br>
-						</address>
-					</div>
-					<div class='col col-sm-4 align-self-center'>
-						<div style='text-align:center'>
-							<a class='btn btn-social-icon btn-facebook' href='https://www.facebook.com/myra.lehman'>
-								<i class='fab fa-facebook'></i></a>
-							<a class='btn btn-social-icon btn-linkedin' href='https://www.linkedin.com/in/myra-lehman-8690094/'>
-								<i class='fab fa-linkedin'></i></a>
-							<a class='btn btn-social-icon fa-md' href='mailto:sculpturemyra@optonline.net'><i class='fas fa-envelope'></i></a>
-						</div>
+			<div class='row'>
+				<div class='col-5 col-sm-2 offset-1'>
+					<h5 class='mb-3 mt-2'>Links</h5>
+					<ul class='list-unstyled'>
+						<li><a href='./index.html'>Home</a></li>
+						<li><a href='./resume.html'>Resume</a></li>
+						<li><a href='./gallery.html'>Gallery</a></li>
+						<li><a href='./contact.html'>Contact</a></li>
+					</ul>
+				</div>
+				<div class='col-6 col-sm-5'>
+					<h5 class='mb-3 mt-2'>Location</h5>
+					<address>
+						Rye <br>
+						New York<br>
+					</address>
+				</div>
+				<div class='col col-sm-4 align-self-center'>
+					<div style='text-align:center'>
+						<a class='btn btn-social-icon btn-facebook' href='https://www.facebook.com/myra.lehman'>
+							<i class='fab fa-facebook'></i></a>
+						<a class='btn btn-social-icon btn-linkedin' href='https://www.linkedin.com/in/myra-lehman-8690094/'>
+							<i class='fab fa-linkedin'></i></a>
+						<a class='btn btn-social-icon fa-md' href='mailto:sculpturemyra@optonline.net'><i class='fas fa-envelope'></i></a>
 					</div>
 				</div>
-				<div class='row justify-content-center'>
-					<div class='col col-auto'>
-						<p> <a href="https://gordonholdingsco.com/index.html" title='Visit Gordon Enterprises Business Consulting Website'>Created by Gordon Enterprises</a></p>
-					</div>
+			</div>
+			<div class='row justify-content-center'>
+				<div class='col col-auto'>
+					<p> <a href="https://gordonholdingsco.com/index.html" title='Visit Gordon Enterprises Business Consulting Website'>Created by Gordon Enterprises</a></p>
 				</div>
-			</footer>
+			</div>
+		</footer>
 
-			<!-- jQuery first, then Tether, then Bootstrap JS. -->
-			<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-			<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js' crossorigin='anonymous'></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js' crossorigin='anonymous'></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
-			<script>
-				<!--carousel play/pause script -->
-				$(document).ready(function() {
-					$('#carousel-button').click(function() {
-						if ($('#carousel-button').children('span').hasClass('fa-pause')) {
-							$('#myCarousel').carousel('pause');
-							$('#carousel-button').children('span').removeClass('fa-pause');
-							$('#carousel-button').children('span').addClass('fa-play');
-						} else if ($('#carousel-button').children('span').hasClass('fa-play')) {
-							$('#myCarousel').carousel('cycle');
-							$('#carousel-button').children('span').removeClass('fa-play');
-							$('#carousel-button').children('span').addClass('fa-pause');
-						}
-					});
-				});
-			</script>
-			<!-- Submit form to php -->
-			<script>
-				$("form").on("submit", function(e) {
-					e.preventDefault();
-					if (grecaptcha.getResponse().length !== 0) {
-						$(".btn").prop("disabled", true);
-
-						$.ajax({
-							type: "post",
-							url: "./php/sculpture_inquiry.php",
-							data: $("form").serialize(),
-							success: function() {
-
-							}
-						})
-						$(this).find("input[type=msg], textarea").val("");
-						$(this).find("input[type=phone], input").val("");
-						$(this).find("input[type=email], input").val("");
-						$(this).find("input[type=subject], input").val("");
-						$(this).find("input[type=piece], input").val("");
-						$(this).find("input[type=price], input").val("");
-						$(".btn").attr("value", "Inquiry Submitted!");
-					} else {
-						$(".btn").attr("value", "Click captcha");
+		<script>
+			<!--carousel play/pause script -->
+			$(document).ready(function() {
+				$('#carousel-button').click(function() {
+					if ($('#carousel-button').children('span').hasClass('fa-pause')) {
+						$('#myCarousel').carousel('pause');
+						$('#carousel-button').children('span').removeClass('fa-pause');
+						$('#carousel-button').children('span').addClass('fa-play');
+					} else if ($('#carousel-button').children('span').hasClass('fa-play')) {
+						$('#myCarousel').carousel('cycle');
+						$('#carousel-button').children('span').removeClass('fa-play');
+						$('#carousel-button').children('span').addClass('fa-pause');
 					}
+				});
+			});
+		</script>
+		<!-- Submit form to php -->
+		<script>
+			$("form").on("submit", function(e) {
+				e.preventDefault();
+				if (grecaptcha.getResponse().length !== 0) {
+					$(".btn").prop("disabled", true);
 
-				})
-			</script>
+					$.ajax({
+						type: "post",
+						url: "./php/sculpture_inquiry.php",
+						data: $("form").serialize(),
+						success: function() {
+
+						}
+					})
+					$(this).find("input[type=msg], textarea").val("");
+					$(this).find("input[type=phone], input").val("");
+					$(this).find("input[type=email], input").val("");
+					$(this).find("input[type=subject], input").val("");
+					$(this).find("input[type=piece], input").val("");
+					$(this).find("input[type=price], input").val("");
+					$(".btn").attr("value", "Inquiry Submitted!");
+				} else {
+					$(".btn").attr("value", "Click captcha");
+				}
+
+			})
+		</script>
 	</body>
 
 </html>
