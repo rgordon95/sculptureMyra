@@ -1,0 +1,736 @@
+[
+  {
+    "slug": "abstract-i",
+    "title": "Abstract I",
+    "category": "stone",
+    "material": "",
+    "dimensions": "",
+    "images": [
+      "img/stone/abstract1.jpg",
+      "img/stone/abstract2.jpg",
+      "img/stone/abstract3.jpg",
+      "img/stone/abstract4.jpg"
+    ]
+  },
+  {
+    "slug": "all-ears",
+    "title": "All Ears",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "14\"x21\"x10\"",
+    "images": [
+      "img/stone/allEars1.jpg",
+      "img/stone/allEars2.jpg",
+      "img/stone/allEars3.jpg",
+      "img/stone/allEars4.jpg"
+    ]
+  },
+  {
+    "slug": "all-my-children",
+    "title": "All My Children",
+    "category": "stone",
+    "material": "Limestone",
+    "dimensions": "16\"x9\"x8\"",
+    "images": [
+      "img/stone/allMyChildren1.jpg"
+    ]
+  },
+  {
+    "slug": "caduceus",
+    "title": "Caduceus",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "23\"x5\"x5\"",
+    "images": [
+      "img/stone/caduceus1.jpg",
+      "img/stone/caduceus2.jpg",
+      "img/stone/caduceus3.jpg",
+      "img/stone/caduceus4.jpg"
+    ]
+  },
+  {
+    "slug": "athena-s-parthenon",
+    "title": "Athena's Parthenon",
+    "category": "stone",
+    "material": "Marble",
+    "dimensions": "",
+    "images": [
+      "img/stone/comedyTragedy1.jpg",
+      "img/stone/comedyTragedy2.jpg",
+      "img/stone/comedyTragedy3.jpg",
+      "img/stone/comedyTragedy4.jpg"
+    ]
+  },
+  {
+    "slug": "cubic-i",
+    "title": "Cubic I",
+    "category": "stone",
+    "material": "Steatite",
+    "dimensions": "14\"x18\"x7\"",
+    "images": [
+      "img/stone/cubicI1.jpg",
+      "img/stone/cubicI2.jpg",
+      "img/stone/cubicI3.jpg",
+      "img/stone/cubicI4.jpg"
+    ]
+  },
+  {
+    "slug": "cubic-ii",
+    "title": "Cubic II",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "14\"x21\"x10\"",
+    "images": [
+      "img/stone/cubicII0.jpg",
+      "img/stone/cubicII1.jpg",
+      "img/stone/cubicII2.jpg",
+      "img/stone/cubicII3.jpg",
+      "img/stone/cubicII4.jpg"
+    ]
+  },
+  {
+    "slug": "ember",
+    "title": "Ember",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "",
+    "images": [
+      "img/stone/ember1.jpg",
+      "img/stone/ember2.jpg",
+      "img/stone/ember3.jpg",
+      "img/stone/ember4.jpg"
+    ]
+  },
+  {
+    "slug": "el-toro",
+    "title": "El Toro",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "23\"x5\"x5\"",
+    "images": [
+      "img/stone/elToro1.jpg",
+      "img/stone/elToro2.jpg",
+      "img/stone/elToro3.jpg",
+      "img/stone/elToro4.jpg"
+    ]
+  },
+  {
+    "slug": "entre-nous",
+    "title": "Entre Nous",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "23\"x7x9\"",
+    "images": [
+      "img/stone/entreNous1.jpg",
+      "img/stone/entreNous2.jpg",
+      "img/stone/entrenous3.jpg",
+      "img/stone/entreNous4.jpg"
+    ]
+  },
+  {
+    "slug": "eye-to-eye",
+    "title": "Eye To Eye",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "23\"x7x9\"",
+    "images": [
+      "img/stone/eyetoeye1.jpg",
+      "img/stone/eyetoeye2.jpg"
+    ]
+  },
+  {
+    "slug": "family",
+    "title": "Family",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "14\"x21\"x10\"",
+    "images": [
+      "img/stone/family1.jpg"
+    ]
+  },
+  {
+    "slug": "flying",
+    "title": "Flying",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "14\"x6\"x4\"",
+    "images": [
+      "img/stone/flying1.jpg",
+      "img/stone/flying2.jpg",
+      "img/stone/flying3.jpg",
+      "img/stone/flying4.jpg"
+    ]
+  },
+  {
+    "slug": "free-form",
+    "title": "Free Form",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "12\"x13\"x4\"",
+    "images": [
+      "img/stone/freeform1.jpg",
+      "img/stone/freeform2.jpg",
+      "img/stone/freeform3.jpg",
+      "img/stone/freeform4.jpg"
+    ]
+  },
+  {
+    "slug": "generations",
+    "title": "Generations",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "22\"x8\"x6\"",
+    "images": [
+      "img/stone/generations1.jpg",
+      "img/stone/generations2.jpg",
+      "img/stone/generations3.jpg",
+      "img/stone/generations4.jpg"
+    ]
+  },
+  {
+    "slug": "heart-of-the-matter",
+    "title": "Heart of the Matter",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "20\"x16\"x10\"",
+    "images": [
+      "img/stone/heartOfTheMatter1.jpg",
+      "img/stone/heartOfTheMatter2.jpg",
+      "img/stone/heartOfTheMatter3.jpg",
+      "img/stone/heartOfTheMatter4.jpg"
+    ]
+  },
+  {
+    "slug": "lapis",
+    "title": "Lapis",
+    "category": "stone",
+    "material": "Lapis",
+    "dimensions": "",
+    "images": [
+      "img/stone/lapis1.jpg",
+      "img/stone/lapis2.jpg",
+      "img/stone/lapis3.jpg",
+      "img/stone/lapis4.jpg"
+    ]
+  },
+  {
+    "slug": "legacy",
+    "title": "Legacy",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "20\"x7x8\"",
+    "images": [
+      "img/stone/legacy1.jpg",
+      "img/stone/legacy2.jpg",
+      "img/stone/legacy3.jpg"
+    ]
+  },
+  {
+    "slug": "locked-in-city",
+    "title": "Locked In City",
+    "category": "stone",
+    "material": "Steatite",
+    "dimensions": "15\"x15\"x5\"",
+    "images": [
+      "img/stone/lockedincity1.jpg"
+    ]
+  },
+  {
+    "slug": "luna-landing",
+    "title": "Luna Landing",
+    "category": "stone",
+    "material": "Limestone & Wood",
+    "dimensions": "23\"x6.5x7\"",
+    "images": [
+      "img/stone/lunarlanding1.jpg",
+      "img/stone/lunarlanding2.jpg",
+      "img/stone/lunarlanding3.jpg"
+    ]
+  },
+  {
+    "slug": "my-bluestone",
+    "title": "My Bluestone",
+    "category": "stone",
+    "material": "Marble",
+    "dimensions": "18\"x7x6\"",
+    "images": [
+      "img/stone/myBluestone1.jpg",
+      "img/stone/myBluestone2.jpg",
+      "img/stone/myBluestone3.jpg",
+      "img/stone/myBluestone4.jpg"
+    ]
+  },
+  {
+    "slug": "oaxaca",
+    "title": "Oaxaca",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "11\"x9\"x11\"",
+    "images": [
+      "img/stone/oaxaca1.jpg",
+      "img/stone/oaxaca2.jpg",
+      "img/stone/oaxaca3.jpg",
+      "img/stone/oaxaca4.jpg"
+    ]
+  },
+  {
+    "slug": "orbits",
+    "title": "Orbits",
+    "category": "stone",
+    "material": "Limestone",
+    "dimensions": "13\"x26\"x6\"",
+    "images": [
+      "img/stone/orbits1.jpg"
+    ]
+  },
+  {
+    "slug": "pietrasanta",
+    "title": "Pietrasanta",
+    "category": "stone",
+    "material": "Marble",
+    "dimensions": "20\"x6\"x7\"",
+    "images": [
+      "img/stone/pietrasanta1.jpg"
+    ]
+  },
+  {
+    "slug": "pink-lady",
+    "title": "Pink Lady",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "16\"x10x5\"",
+    "images": [
+      "img/stone/pinkLady1.jpg",
+      "img/stone/pinkLady2.jpg",
+      "img/stone/pinkLady3.jpg",
+      "img/stone/pinkLady4.jpg"
+    ]
+  },
+  {
+    "slug": "precious",
+    "title": "Precious",
+    "category": "stone",
+    "material": "SW Soapstone",
+    "dimensions": "16\"x4\"x4\"",
+    "images": [
+      "img/stone/precious1.jpg"
+    ]
+  },
+  {
+    "slug": "rage",
+    "title": "Rage",
+    "category": "stone",
+    "material": "Alabaster & Teak",
+    "dimensions": "28\"x10\"x8\"",
+    "images": [
+      "img/stone/rage1.jpg",
+      "img/stone/rage2.jpg",
+      "img/stone/rage3.jpg",
+      "img/stone/rage4.jpg",
+      "img/stone/rage5.jpg",
+      "img/stone/rage6.jpg"
+    ]
+  },
+  {
+    "slug": "ruins",
+    "title": "Ruins",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "15\"x17\"x7\"",
+    "images": [
+      "img/stone/ruins1.jpg"
+    ]
+  },
+  {
+    "slug": "sail-away",
+    "title": "Sail Away",
+    "category": "stone",
+    "material": "Alaska Soapstone",
+    "dimensions": "31\"x12x5\"",
+    "images": [
+      "img/stone/sailaway1.jpg",
+      "img/stone/sailaway2.jpg"
+    ]
+  },
+  {
+    "slug": "seeress",
+    "title": "Seeress",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "16\"x12\"x6\"",
+    "images": [
+      "img/stone/seeress1.jpg",
+      "img/stone/seeress2.jpg",
+      "img/stone/seeress3.jpg",
+      "img/stone/seeress4.jpg",
+      "img/stone/seeress5.jpg"
+    ]
+  },
+  {
+    "slug": "serenity",
+    "title": "Serenity",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "34\"x8\"x8\"",
+    "images": [
+      "img/stone/serenity1.jpg",
+      "img/stone/serenity2.jpg",
+      "img/stone/serenity3.jpg",
+      "img/stone/serenity4.jpg"
+    ]
+  },
+  {
+    "slug": "study-in-white",
+    "title": "Study in White",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "28\"x10.5x9\"",
+    "images": [
+      "img/stone/studyinwhite1.jpg",
+      "img/stone/studyinwhite2.jpg"
+    ]
+  },
+  {
+    "slug": "tension",
+    "title": "Tension",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "14\"x6\"x6\"",
+    "images": [
+      "img/stone/tension1.jpg",
+      "img/stone/tension2.jpg",
+      "img/stone/tension3.jpg",
+      "img/stone/tension4.jpg"
+    ]
+  },
+  {
+    "slug": "torso-i",
+    "title": "Torso I",
+    "category": "stone",
+    "material": "Alaska Soapstone",
+    "dimensions": "31\"x12x5\"",
+    "images": [
+      "img/stone/torsoI1.jpg",
+      "img/stone/torsoI2.jpg"
+    ]
+  },
+  {
+    "slug": "totem",
+    "title": "Totem",
+    "category": "stone",
+    "material": "Alaska Soapstone",
+    "dimensions": "34\"x10\"x9\"",
+    "images": [
+      "img/stone/totem1.jpg"
+    ]
+  },
+  {
+    "slug": "trio",
+    "title": "Trio",
+    "category": "stone",
+    "material": "Steatite",
+    "dimensions": "27\"x10x9\"",
+    "images": [
+      "img/stone/trio1.jpg",
+      "img/stone/trio2.jpg"
+    ]
+  },
+  {
+    "slug": "union",
+    "title": "Union",
+    "category": "stone",
+    "material": "Steatite",
+    "dimensions": "25\"x10\"x10\"",
+    "images": [
+      "img/stone/union1.jpg",
+      "img/stone/union2.jpg",
+      "img/stone/union3.jpg",
+      "img/stone/union4.jpg"
+    ]
+  },
+  {
+    "slug": "whisper",
+    "title": "Whisper",
+    "category": "stone",
+    "material": "Alabaster",
+    "dimensions": "18\"x5.5\" (Round Base)",
+    "images": [
+      "img/stone/whisper1.jpg"
+    ]
+  },
+  {
+    "slug": "whither-thou-goest",
+    "title": "Whither Thou Goest",
+    "category": "stone",
+    "material": "Limestone",
+    "dimensions": "45\"x15\"x7\"",
+    "images": [
+      "img/stone/whitherthougoest1.jpg"
+    ]
+  },
+  {
+    "slug": "younger-than-springtime",
+    "title": "Younger Than Springtime",
+    "category": "stone",
+    "material": "Marble",
+    "dimensions": "17.5\"x4x5\"",
+    "images": [
+      "img/stone/youngerThanSpringtime1.jpg",
+      "img/stone/youngerThanSpringtime2.jpg",
+      "img/stone/youngerthanspringtime3.jpg",
+      "img/stone/youngerThanSpringtime4.jpg"
+    ]
+  },
+  {
+    "slug": "birds-condo",
+    "title": "Birds Condo",
+    "category": "wood",
+    "material": "Black Walnut",
+    "dimensions": "68\"x10.5\"x10.5\"",
+    "images": [
+      "img/wood/birdscondo1.jpg"
+    ]
+  },
+  {
+    "slug": "boy-with-future",
+    "title": "Boy With Future",
+    "category": "wood",
+    "material": "Black Walnut",
+    "dimensions": "36\"x8\"x6\"",
+    "images": [
+      "img/wood/boywithfuture1.jpg",
+      "img/wood/boywithfuture2.jpg"
+    ]
+  },
+  {
+    "slug": "hang-in-there-babe",
+    "title": "Hang In There Babe",
+    "category": "wood",
+    "material": "Applewood",
+    "dimensions": "68\"x27\"x17\"",
+    "images": [
+      "img/wood/hangintherebabe1.jpg",
+      "img/wood/hangintherebabe2.jpg"
+    ]
+  },
+  {
+    "slug": "emergence",
+    "title": "Emergence",
+    "category": "wood",
+    "material": "Cherry",
+    "dimensions": "",
+    "images": [
+      "img/wood/emergence1.jpg",
+      "img/wood/emergence2.jpg",
+      "img/wood/emergence3.jpg",
+      "img/wood/emergence4.jpg"
+    ]
+  },
+  {
+    "slug": "inner-core",
+    "title": "Inner core",
+    "category": "wood",
+    "material": "Cherry Wood",
+    "dimensions": "26\"x16\"x12\"",
+    "images": [
+      "img/wood/innercore1.jpg",
+      "img/wood/innercore2.jpg"
+    ]
+  },
+  {
+    "slug": "looking-towards-the-future",
+    "title": "Looking Towards The Future",
+    "category": "wood",
+    "material": "Teak Wood",
+    "dimensions": "21\"x6\"x4\"",
+    "images": [
+      "img/wood/lookingTowardsFuture1.jpg",
+      "img/wood/lookingTowardsFuture2.jpg",
+      "img/wood/lookingTowardsFuture3.jpg",
+      "img/wood/lookingTowardsFuture4.jpg"
+    ]
+  },
+  {
+    "slug": "luna-persona",
+    "title": "Luna Persona",
+    "category": "wood",
+    "material": "Cypress/Steatite",
+    "dimensions": "33\"x12\"x5\"",
+    "images": [
+      "img/wood/lunaPersona1.jpg",
+      "img/wood/lunaPersona2.jpg",
+      "img/wood/lunaPersona3.jpg",
+      "img/wood/lunaPersona4.jpg"
+    ]
+  },
+  {
+    "slug": "mr-who",
+    "title": "Mr. Who",
+    "category": "wood",
+    "material": "Applewood",
+    "dimensions": "18\"x15\"x6\"",
+    "images": [
+      "img/wood/mrWho1.jpg",
+      "img/wood/mrWho2.jpg",
+      "img/wood/mrWho3.jpg",
+      "img/wood/mrWho4.jpg"
+    ]
+  },
+  {
+    "slug": "my-pagoda",
+    "title": "My Pagoda",
+    "category": "wood",
+    "material": "Black Walnut",
+    "dimensions": "32\"x9\"x10\"",
+    "images": [
+      "img/wood/myPagoda1.jpg"
+    ]
+  },
+  {
+    "slug": "shapely-you",
+    "title": "Shapely You",
+    "category": "wood",
+    "material": "Teak Wood",
+    "dimensions": "21\"x6\"x4\"",
+    "images": [
+      "img/wood/shapelyyou1.JPG",
+      "img/wood/shapelyyou2.JPG",
+      "img/wood/shapelyyou3.JPG",
+      "img/wood/shapelyyou4.JPG"
+    ]
+  },
+  {
+    "slug": "support",
+    "title": "Support",
+    "category": "wood",
+    "material": "Black Walnut",
+    "dimensions": "64\"x17\"x3\"",
+    "images": [
+      "img/wood/support1.jpg"
+    ]
+  },
+  {
+    "slug": "three-no-evil",
+    "title": "Three No Evil",
+    "category": "wood",
+    "material": "Lignum Vitae",
+    "dimensions": "67\"x10\"x10\"",
+    "images": [
+      "img/wood/threenoevil1.jpg",
+      "img/wood/threenoevil2.jpg"
+    ]
+  },
+  {
+    "slug": "torso-iii",
+    "title": "Torso III",
+    "category": "wood",
+    "material": "Black Walnut",
+    "dimensions": "26\"x11\"x9\"",
+    "images": [
+      "img/wood/torsoIII1.jpg",
+      "img/wood/torsoIII2.jpg",
+      "img/wood/torsoIII3.jpg",
+      "img/wood/torsoIII4.jpg"
+    ]
+  },
+  {
+    "slug": "total-woman",
+    "title": "Total Woman",
+    "category": "wood",
+    "material": "Cherry Wood",
+    "dimensions": "33\"x6\"x4\"",
+    "images": [
+      "img/wood/totalwoman1.jpg",
+      "img/wood/totalwoman2.jpg"
+    ]
+  },
+  {
+    "slug": "totem-iv",
+    "title": "Totem IV",
+    "category": "wood",
+    "material": "Hawaiian Koa",
+    "dimensions": "34\"x16\"x8\"",
+    "images": [
+      "img/wood/totemIV1.jpg",
+      "img/wood/totemIV2.jpg",
+      "img/wood/totemIV3.jpg",
+      "img/wood/totemIV4.jpg"
+    ]
+  },
+  {
+    "slug": "youthful-twins",
+    "title": "Youthful Twins",
+    "category": "wood",
+    "material": "Teak Wood",
+    "dimensions": "21\"x6\"x4\"",
+    "images": [
+      "img/wood/youthfulTwins1.jpg",
+      "img/wood/youthfulTwins2.jpg",
+      "img/wood/youthfulTwins3.jpg",
+      "img/wood/youthfulTwins4.jpg"
+    ]
+  },
+  {
+    "slug": "caduceus-bronze",
+    "title": "Caduceus",
+    "category": "other",
+    "material": "Bronze",
+    "dimensions": "23\"x5\"x5\"",
+    "images": [
+      "img/Other/caduceusBronze1.jpg",
+      "img/Other/caduceusBronze2.jpg",
+      "img/Other/caduceusBronze3.jpg",
+      "img/Other/caduceusBronze4.jpg"
+    ]
+  },
+  {
+    "slug": "bronze-family",
+    "title": "Bronze Family",
+    "category": "other",
+    "material": "Bronze",
+    "dimensions": "12\"x10\"x10\"",
+    "images": [
+      "img/Other/bronzeFamily1.jpg",
+      "img/Other/bronzeFamily2.jpg",
+      "img/Other/bronzeFamily3.jpg",
+      "img/Other/bronzeFamily4.jpg",
+      "img/Other/bronzeFamily5.jpg"
+    ]
+  },
+  {
+    "slug": "clay-family",
+    "title": "Clay Family",
+    "category": "other",
+    "material": "Clay",
+    "dimensions": "12\"x12\"x16\"",
+    "images": [
+      "img/Other/clayFamily1.jpg",
+      "img/Other/clayFamily2.jpg",
+      "img/Other/clayFamily3.jpg",
+      "img/Other/clayFamily4.jpg"
+    ]
+  },
+  {
+    "slug": "egyptian-cat",
+    "title": "Egyptian Cat",
+    "category": "other",
+    "material": "Ceramic",
+    "dimensions": "12\"x10\"x10\"",
+    "images": [
+      "img/Other/egyptianCat1.jpg",
+      "img/Other/egyptianCat2.jpg",
+      "img/Other/egyptianCat3.jpg",
+      "img/Other/egyptianCat4.jpg"
+    ]
+  },
+  {
+    "slug": "she-and-he",
+    "title": "She and He",
+    "category": "other",
+    "material": "Concrete",
+    "dimensions": "6'2x18\"x23\", 7'x19\"x25\"",
+    "images": [
+      "img/Other/sheAndHeConcrete1.jpg"
+    ]
+  }
+]

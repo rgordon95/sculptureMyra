@@ -1,43 +1,12 @@
 {
-  "name": "confusion",
-  "version": "1.0.0",
-  "description": "This is a website for Sculpture Myra",
-  "main": "index.html",
+  "name": "sculpture-myra",
+  "version": "2.0.0",
+  "description": "Website for Myra Lehman's sculpture",
+  "private": true,
   "scripts": {
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "images": "python3 scripts/images.py",
+    "build": "python3 scripts/build.py",
+    "start": "python3 -m http.server 8000"
   },
-  "dependencies": {
-    "bootstrap": "^4.1.1",
-    "bootstrap-social": "^5.1.1",
-    "browser-sync": "^2.18.13",
-    "cssmin": "^0.4.3",
-    "del": "^3.0.0",
-    "font-awesome": "^4.7.0",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-flatmap": "^1.0.0",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.4.0",
-    "gulp-rev": "^8.0.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-usemin": "^0.3.28",
-    "htmlmin": "0.0.7",
-    "jquery": "^3.3.1",
-    "lite-server": "^2.2.2",
-    "node-sass": "^4.5.3",
-    "onchange": "^3.2.1",
-    "parallelshell": "^3.0.2",
-    "rimraf": "^2.6.2",
-    "tether": "^1.4.3",
-    "uglify-js": "^3.1.5",
-    "usemin-cli": "^0.5.1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "lite-server": "^2.2.2"
-  }
+  "license": "ISC"
 }
