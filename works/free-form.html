@@ -30,9 +30,12 @@
 <main id="main">
 <article class="work wrap">
   <div class="work-stage">
-    <button class="stage-btn" type="button" id="zoom" aria-label="View larger">
-      <img src="../img/web/lg/free-form-1.jpg" srcset="../img/web/sm/free-form-1.jpg 900w, ../img/web/lg/free-form-1.jpg 2000w" sizes="(max-width: 900px) 100vw, 64vw" width="2830" height="3375" alt="Free Form, Alabaster" loading="eager" decoding="async" class="stage-img">
-    </button>
+    <div class="stage">
+      <button class="stage-btn" type="button" id="zoom" aria-label="View larger">
+        <img src="../img/web/lg/free-form-1.jpg" srcset="../img/web/sm/free-form-1.jpg 900w, ../img/web/lg/free-form-1.jpg 2000w" sizes="(max-width: 900px) 100vw, 64vw" width="2830" height="3375" alt="Free Form, Alabaster" loading="eager" decoding="async" class="stage-img">
+      </button>
+      <button class="v-btn v-prev" type="button" data-stage-step="-1" aria-label="Previous angle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button class="v-btn v-next" type="button" data-stage-step="1" aria-label="Next angle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button><p class="stage-count" id="stage-count">Angle 1 of 4</p>
+    </div>
     <div class="thumbs" role="list"><button type="button" role="listitem" class="thumb" data-i="0" aria-label="Show view 1" aria-current=true><img src="../img/web/sm/free-form-1.jpg" alt="" width="2830" height="3375" loading="lazy"></button><button type="button" role="listitem" class="thumb" data-i="1" aria-label="Show view 2"><img src="../img/web/sm/free-form-2.jpg" alt="" width="3081" height="3425" loading="lazy"></button><button type="button" role="listitem" class="thumb" data-i="2" aria-label="Show view 3"><img src="../img/web/sm/free-form-3.jpg" alt="" width="2979" height="3227" loading="lazy"></button><button type="button" role="listitem" class="thumb" data-i="3" aria-label="Show view 4"><img src="../img/web/sm/free-form-4.jpg" alt="" width="2836" height="3222" loading="lazy"></button></div>
   </div>
   <div class="work-info">
@@ -54,8 +57,8 @@
 <dialog class="viewer" id="viewer" aria-label="Sculpture preview">
   <div class="viewer-stage">
     <img alt="" id="viewer-img">
-    <button class="v-btn v-prev" type="button" data-step="-1" aria-label="Previous sculpture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <button class="v-btn v-next" type="button" data-step="1" aria-label="Next sculpture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <button class="v-btn v-prev" type="button" data-step="-1" aria-label="Previous angle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="v-btn v-next" type="button" data-step="1" aria-label="Next angle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   </div>
   <aside class="viewer-info">
     <button class="v-close" type="button" aria-label="Close preview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>

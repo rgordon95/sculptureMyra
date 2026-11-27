@@ -25,9 +25,21 @@
   });
   if (grid && grid.dataset.preset) applyFilter(grid.dataset.preset, false);
 
-  /* ---------- Viewer (quick preview + zoom) ---------- */
+  /* ---------- Viewer (quick preview + zoom) ----------
+     Arrows, arrow keys and swipes step through the angles of the open sculpture only. */
   var viewer = document.getElementById('viewer');
-  var state = { list: [], i: 0, view: 0 };
+  var state = { w: null, view: 0 };
+  var wrap = function (i, n) { return (i + n) % n; };
+  var onSwipe = function (el, fn) {
+    var x = null;
+    el.addEventListener('touchstart', function (ev) { x = ev.touches[0].clientX; }, { passive: true });
+    el.addEventListener('touchend', function (ev) {
+      if (x === null) return;
+      var dx = ev.changedTouches[0].clientX - x;
+      if (Math.abs(dx) > 50) fn(dx < 0 ? 1 : -1);
+      x = null;
+    });
+  };
   if (viewer) {
     var vImg = document.getElementById('viewer-img');
     var vTitle = document.getElementById('viewer-title');
@@ -38,91 +50,102 @@
     var vCount = document.getElementById('viewer-count');
 
     var render = function () {
-      var w = state.list[state.i];
+      var w = state.w;
       var pic = w.pics[state.view];
       vImg.src = src(pic[0]);
       vImg.width = pic[1]; vImg.height = pic[2];
-      vImg.alt = w.title + ', ' + w.material + (state.view ? ' (view ' + (state.view + 1) + ')' : '');
+      vImg.alt = w.title + ', ' + w.material + (state.view ? ' (angle ' + (state.view + 1) + ')' : '');
+      vThumbs.querySelectorAll('button').forEach(function (b) {
+        if (+b.dataset.view === state.view) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current');
+      });
+      vCount.textContent = 'Angle ' + (state.view + 1) + ' of ' + w.pics.length;
+      // warm the neighbouring angles so stepping feels instant
+      if (w.pics.length > 1) {
+        new Image().src = src(w.pics[wrap(state.view + 1, w.pics.length)][0]);
+        new Image().src = src(w.pics[wrap(state.view - 1, w.pics.length)][0]);
+      }
+    };
+    var open = function (w, view, single) {
+      state = { w: w, view: view || 0 };
+      viewer.classList.toggle('single', !!single);
+      viewer.classList.toggle('one-view', w.pics.length < 2);
       vTitle.textContent = w.title;
       vFacts.innerHTML = [['Material', w.material], ['Dimensions', w.dimensions], ['Collection', w.cat]]
         .filter(function (r) { return r[1]; })
         .map(function (r) { return '<div><dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd></div>'; }).join('');
       vThumbs.innerHTML = w.pics.length < 2 ? '' : w.pics.map(function (p, k) {
-        return '<button type="button" data-view="' + k + '" aria-label="Show view ' + (k + 1) + '"' +
-          (k === state.view ? ' aria-current="true"' : '') + '><img src="' + src(p[0], 'sm') + '" alt=""></button>';
+        return '<button type="button" data-view="' + k + '" aria-label="Show angle ' + (k + 1) + '">' +
+          '<img src="' + src(p[0], 'sm') + '" alt=""></button>';
       }).join('');
       vPage.href = root + 'works/' + w.slug + '.html';
       vAsk.href = root + 'contact.html?piece=' + w.slug;
-      vCount.textContent = (state.i + 1) + ' of ' + state.list.length;
-      // warm the neighbours so arrowing feels instant
-      [state.i - 1, state.i + 1].forEach(function (k) {
-        var n = state.list[(k + state.list.length) % state.list.length];
-        if (n) new Image().src = src(n.pics[0][0]);
-      });
-    };
-    var open = function (list, i, view, single) {
-      state = { list: list, i: i, view: view || 0 };
-      viewer.classList.toggle('single', !!single);
       render();
       if (!viewer.open) viewer.showModal();
     };
     var step = function (d) {
-      if (viewer.classList.contains('single') || state.list.length < 2) return;
-      state.i = (state.i + d + state.list.length) % state.list.length;
-      state.view = 0;
+      if (!state.w || state.w.pics.length < 2) return;
+      state.view = wrap(state.view + d, state.w.pics.length);
       render();
+      if (onViewerStep) onViewerStep(state.view);
     };
+    var onViewerStep = null;
     viewer.addEventListener('click', function (ev) {
       var b = ev.target.closest('button');
       if (b && b.dataset.step) step(+b.dataset.step);
-      else if (b && b.dataset.view) { state.view = +b.dataset.view; render(); }
+      else if (b && b.dataset.view) { state.view = +b.dataset.view; render(); if (onViewerStep) onViewerStep(state.view); }
       else if (b && b.classList.contains('v-close')) viewer.close();
       else if (ev.target.classList.contains('viewer-stage')) viewer.close();
     });
     viewer.addEventListener('keydown', function (ev) {
-      if (ev.key === 'ArrowRight') step(1);
-      if (ev.key === 'ArrowLeft') step(-1);
+      if (ev.key === 'ArrowRight') { ev.preventDefault(); step(1); }
+      if (ev.key === 'ArrowLeft') { ev.preventDefault(); step(-1); }
     });
-    var touchX = null;
-    viewer.addEventListener('touchstart', function (ev) { touchX = ev.touches[0].clientX; }, { passive: true });
-    viewer.addEventListener('touchend', function (ev) {
-      if (touchX === null) return;
-      var dx = ev.changedTouches[0].clientX - touchX;
-      if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
-      touchX = null;
-    });
+    onSwipe(viewer, step);
 
     // Tiles open a preview on plain click; modified clicks still open the work's own page.
     document.addEventListener('click', function (ev) {
       var t = ev.target.closest('.tile');
       if (!t || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button !== 0) return;
-      var scope = t.closest('.justified');
-      var visible = [].filter.call(scope.querySelectorAll('.tile'), function (x) { return !x.hidden; })
-        .map(function (x) { return bySlug[x.dataset.slug]; });
-      if (!bySlug[t.dataset.slug] || visible.indexOf(undefined) !== -1) return; // not previewable here
+      var w = bySlug[t.dataset.slug];
+      if (!w || !document.getElementById('grid') || !t.closest('#grid')) return; // e.g. "More" tiles navigate
       ev.preventDefault();
-      open(visible, visible.indexOf(bySlug[t.dataset.slug]));
+      open(w, 0);
     });
 
-    /* Work page: thumbnails swap the stage image; clicking the stage opens it full screen. */
+    /* Work page: arrows, thumbnails, keys and swipes change the angle; clicking the photo opens it full screen. */
     var stage = document.querySelector('.stage-img');
     var zoom = document.getElementById('zoom');
-    var current = 0;
     if (stage && works.length === 1) {
       var w = works[0];
-      document.querySelectorAll('.thumb').forEach(function (b) {
-        b.addEventListener('click', function () {
-          current = +b.dataset.i;
-          var p = w.pics[current];
-          stage.removeAttribute('srcset');
-          stage.src = src(p[0]); stage.width = p[1]; stage.height = p[2];
-          stage.alt = w.title + ', ' + w.material + (current ? ' (view ' + (current + 1) + ')' : '');
-          document.querySelectorAll('.thumb').forEach(function (x) { x.removeAttribute('aria-current'); });
-          b.setAttribute('aria-current', 'true');
+      var current = 0;
+      var count = document.getElementById('stage-count');
+      var thumbs = document.querySelectorAll('.thumb');
+      var show = function (i) {
+        current = wrap(i, w.pics.length);
+        var p = w.pics[current];
+        stage.removeAttribute('srcset');
+        stage.src = src(p[0]); stage.width = p[1]; stage.height = p[2];
+        stage.alt = w.title + ', ' + w.material + (current ? ' (angle ' + (current + 1) + ')' : '');
+        thumbs.forEach(function (x) {
+          if (+x.dataset.i === current) x.setAttribute('aria-current', 'true'); else x.removeAttribute('aria-current');
         });
+        if (count) count.textContent = 'Angle ' + (current + 1) + ' of ' + w.pics.length;
+        if (w.pics.length > 1) new Image().src = src(w.pics[wrap(current + 1, w.pics.length)][0]);
+      };
+      thumbs.forEach(function (b) { b.addEventListener('click', function () { show(+b.dataset.i); }); });
+      document.querySelectorAll('[data-stage-step]').forEach(function (b) {
+        b.addEventListener('click', function () { show(current + +b.dataset.stageStep); });
       });
-      zoom.addEventListener('click', function () { open([w], 0, current, true); });
-      // "More" tiles on a work page are not in works-data, so they navigate normally.
+      if (w.pics.length > 1) {
+        onSwipe(zoom, function (d) { show(current + d); });
+        document.addEventListener('keydown', function (ev) {
+          if (viewer.open || /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+          if (ev.key === 'ArrowRight') show(current + 1);
+          if (ev.key === 'ArrowLeft') show(current - 1);
+        });
+      }
+      onViewerStep = show; // keep the page in sync with the angle viewed full screen
+      zoom.addEventListener('click', function () { open(w, current, true); });
     }
   }
 

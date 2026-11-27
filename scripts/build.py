@@ -135,8 +135,8 @@ def preview_dialog():
     return '''<dialog class="viewer" id="viewer" aria-label="Sculpture preview">
   <div class="viewer-stage">
     <img alt="" id="viewer-img">
-    <button class="v-btn v-prev" type="button" data-step="-1" aria-label="Previous sculpture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <button class="v-btn v-next" type="button" data-step="1" aria-label="Next sculpture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <button class="v-btn v-prev" type="button" data-step="-1" aria-label="Previous angle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="v-btn v-next" type="button" data-step="1" aria-label="Next angle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   </div>
   <aside class="viewer-info">
     <button class="v-close" type="button" aria-label="Close preview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -182,6 +182,13 @@ def work_page(idx):
             f'{" aria-current=true" if i == 0 else ""}>'
             f'<img src="{r}img/web/sm/{p["name"]}" alt="" width="{p["w"]}" height="{p["h"]}" loading="lazy"></button>'
             for i, p in enumerate(w['pics'])) + '</div>'
+    stage_nav = ''
+    if len(w['pics']) > 1:
+        stage_nav = ('<button class="v-btn v-prev" type="button" data-stage-step="-1" aria-label="Previous angle">'
+                     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>'
+                     '<button class="v-btn v-next" type="button" data-stage-step="1" aria-label="Next angle">'
+                     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>'
+                     f'<p class="stage-count" id="stage-count">Angle 1 of {len(w["pics"])}</p>')
     more = [x for x in WORKS if x['category'] == w['category'] and x['slug'] != w['slug']][:4]
     if len(more) < 4:
         more += [x for x in WORKS if x['category'] != w['category']][:4 - len(more)]
@@ -189,9 +196,12 @@ def work_page(idx):
     p0 = w['pics'][0]
     body = f'''<article class="work wrap">
   <div class="work-stage">
-    <button class="stage-btn" type="button" id="zoom" aria-label="View larger">
-      {img(w, 0, 'lg', r, 'stage-img', 'eager', '(max-width: 900px) 100vw, 64vw')}
-    </button>
+    <div class="stage">
+      <button class="stage-btn" type="button" id="zoom" aria-label="View larger">
+        {img(w, 0, 'lg', r, 'stage-img', 'eager', '(max-width: 900px) 100vw, 64vw')}
+      </button>
+      {stage_nav}
+    </div>
     {thumbs}
   </div>
   <div class="work-info">
