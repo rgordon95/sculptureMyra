@@ -16,3 +16,5 @@ Generated pages: `index.html`, `gallery.html`, `gallery/*.html`, `works/*.html`,
 Hand-written assets: `css/site.css`, `js/site.js`. Don't edit the generated HTML directly; edit `scripts/build.py`.
 
 `dist/` is the output of the old gulp build and is no longer generated.
+
+Deploys (Vercel) serve the committed files as-is with no build step, so run `scripts/build.py` and commit the generated HTML before pushing.

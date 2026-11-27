@@ -4,9 +4,9 @@
   "description": "Website for Myra Lehman's sculpture",
   "private": true,
   "scripts": {
-    "images": "python3 scripts/images.py",
-    "build": "python3 scripts/build.py",
-    "start": "python3 -m http.server 8000"
+    "site:images": "python3 scripts/images.py",
+    "site:build": "python3 scripts/build.py",
+    "site:serve": "python3 -m http.server 8000"
   },
   "license": "ISC"
 }
