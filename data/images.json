@@ -1,0 +1,927 @@
+{
+ "abstract-i-1.jpg": {
+  "h": 3458,
+  "src": "img/stone/abstract1.jpg",
+  "w": 3015
+ },
+ "abstract-i-2.jpg": {
+  "h": 3463,
+  "src": "img/stone/abstract2.jpg",
+  "w": 2328
+ },
+ "abstract-i-3.jpg": {
+  "h": 3343,
+  "src": "img/stone/abstract3.jpg",
+  "w": 3234
+ },
+ "abstract-i-4.jpg": {
+  "h": 3579,
+  "src": "img/stone/abstract4.jpg",
+  "w": 2495
+ },
+ "all-ears-1.jpg": {
+  "h": 3467,
+  "src": "img/stone/allEars1.jpg",
+  "w": 4397
+ },
+ "all-ears-2.jpg": {
+  "h": 3354,
+  "src": "img/stone/allEars2.jpg",
+  "w": 3251
+ },
+ "all-ears-3.jpg": {
+  "h": 2827,
+  "src": "img/stone/allEars3.jpg",
+  "w": 4275
+ },
+ "all-ears-4.jpg": {
+  "h": 3396,
+  "src": "img/stone/allEars4.jpg",
+  "w": 2942
+ },
+ "all-my-children-1.jpg": {
+  "h": 3577,
+  "src": "img/stone/allMyChildren1.jpg",
+  "w": 3515
+ },
+ "athena-s-parthenon-1.jpg": {
+  "h": 3216,
+  "src": "img/stone/comedyTragedy1.jpg",
+  "w": 2167
+ },
+ "athena-s-parthenon-2.jpg": {
+  "h": 2689,
+  "src": "img/stone/comedyTragedy2.jpg",
+  "w": 2338
+ },
+ "athena-s-parthenon-3.jpg": {
+  "h": 3113,
+  "src": "img/stone/comedyTragedy3.jpg",
+  "w": 2435
+ },
+ "athena-s-parthenon-4.jpg": {
+  "h": 2760,
+  "src": "img/stone/comedyTragedy4.jpg",
+  "w": 2704
+ },
+ "birds-condo-1.jpg": {
+  "h": 150,
+  "src": "img/wood/birdscondo1.jpg",
+  "w": 100
+ },
+ "boy-with-future-1.jpg": {
+  "h": 152,
+  "src": "img/wood/boywithfuture1.jpg",
+  "w": 100
+ },
+ "boy-with-future-2.jpg": {
+  "h": 152,
+  "src": "img/wood/boywithfuture2.jpg",
+  "w": 100
+ },
+ "bronze-family-1.jpg": {
+  "h": 3349,
+  "src": "img/Other/bronzeFamily1.jpg",
+  "w": 3281
+ },
+ "bronze-family-2.jpg": {
+  "h": 3439,
+  "src": "img/Other/bronzeFamily2.jpg",
+  "w": 3233
+ },
+ "bronze-family-3.jpg": {
+  "h": 3305,
+  "src": "img/Other/bronzeFamily3.jpg",
+  "w": 3050
+ },
+ "bronze-family-4.jpg": {
+  "h": 3323,
+  "src": "img/Other/bronzeFamily4.jpg",
+  "w": 3278
+ },
+ "bronze-family-5.jpg": {
+  "h": 3592,
+  "src": "img/Other/bronzeFamily5.jpg",
+  "w": 3324
+ },
+ "caduceus-1.jpg": {
+  "h": 2935,
+  "src": "img/stone/caduceus1.jpg",
+  "w": 1353
+ },
+ "caduceus-2.jpg": {
+  "h": 3040,
+  "src": "img/stone/caduceus2.jpg",
+  "w": 1426
+ },
+ "caduceus-3.jpg": {
+  "h": 2884,
+  "src": "img/stone/caduceus3.jpg",
+  "w": 1355
+ },
+ "caduceus-4.jpg": {
+  "h": 2947,
+  "src": "img/stone/caduceus4.jpg",
+  "w": 1313
+ },
+ "caduceus-bronze-1.jpg": {
+  "h": 3131,
+  "src": "img/Other/caduceusBronze1.jpg",
+  "w": 1742
+ },
+ "caduceus-bronze-2.jpg": {
+  "h": 3362,
+  "src": "img/Other/caduceusBronze2.jpg",
+  "w": 1676
+ },
+ "caduceus-bronze-3.jpg": {
+  "h": 3293,
+  "src": "img/Other/caduceusBronze3.jpg",
+  "w": 1559
+ },
+ "caduceus-bronze-4.jpg": {
+  "h": 3281,
+  "src": "img/Other/caduceusBronze4.jpg",
+  "w": 1598
+ },
+ "clay-family-1.jpg": {
+  "h": 3539,
+  "src": "img/Other/clayFamily1.jpg",
+  "w": 2696
+ },
+ "clay-family-2.jpg": {
+  "h": 3358,
+  "src": "img/Other/clayFamily2.jpg",
+  "w": 2806
+ },
+ "clay-family-3.jpg": {
+  "h": 3593,
+  "src": "img/Other/clayFamily3.jpg",
+  "w": 2398
+ },
+ "clay-family-4.jpg": {
+  "h": 3672,
+  "src": "img/Other/clayFamily4.jpg",
+  "w": 3213
+ },
+ "cubic-i-1.jpg": {
+  "h": 2929,
+  "src": "img/stone/cubicI1.jpg",
+  "w": 2177
+ },
+ "cubic-i-2.jpg": {
+  "h": 2641,
+  "src": "img/stone/cubicI2.jpg",
+  "w": 2564
+ },
+ "cubic-i-3.jpg": {
+  "h": 2885,
+  "src": "img/stone/cubicI3.jpg",
+  "w": 2963
+ },
+ "cubic-i-4.jpg": {
+  "h": 2885,
+  "src": "img/stone/cubicI4.jpg",
+  "w": 2722
+ },
+ "cubic-ii-1.jpg": {
+  "h": 3261,
+  "src": "img/stone/cubicII0.jpg",
+  "w": 1761
+ },
+ "cubic-ii-2.jpg": {
+  "h": 3489,
+  "src": "img/stone/cubicII1.jpg",
+  "w": 1991
+ },
+ "cubic-ii-3.jpg": {
+  "h": 3501,
+  "src": "img/stone/cubicII2.jpg",
+  "w": 1746
+ },
+ "cubic-ii-4.jpg": {
+  "h": 3512,
+  "src": "img/stone/cubicII3.jpg",
+  "w": 1211
+ },
+ "cubic-ii-5.jpg": {
+  "h": 3572,
+  "src": "img/stone/cubicII4.jpg",
+  "w": 1713
+ },
+ "egyptian-cat-1.jpg": {
+  "h": 3593,
+  "src": "img/Other/egyptianCat1.jpg",
+  "w": 2106
+ },
+ "egyptian-cat-2.jpg": {
+  "h": 3487,
+  "src": "img/Other/egyptianCat2.jpg",
+  "w": 2485
+ },
+ "egyptian-cat-3.jpg": {
+  "h": 3429,
+  "src": "img/Other/egyptianCat3.jpg",
+  "w": 1645
+ },
+ "egyptian-cat-4.jpg": {
+  "h": 3416,
+  "src": "img/Other/egyptianCat4.jpg",
+  "w": 1979
+ },
+ "el-toro-1.jpg": {
+  "h": 3199,
+  "src": "img/stone/elToro1.jpg",
+  "w": 2787
+ },
+ "el-toro-2.jpg": {
+  "h": 2685,
+  "src": "img/stone/elToro2.jpg",
+  "w": 3665
+ },
+ "el-toro-3.jpg": {
+  "h": 3056,
+  "src": "img/stone/elToro3.jpg",
+  "w": 1933
+ },
+ "el-toro-4.jpg": {
+  "h": 2765,
+  "src": "img/stone/elToro4.jpg",
+  "w": 3721
+ },
+ "ember-1.jpg": {
+  "h": 3672,
+  "src": "img/stone/ember1.jpg",
+  "w": 3008
+ },
+ "ember-2.jpg": {
+  "h": 3485,
+  "src": "img/stone/ember2.jpg",
+  "w": 2815
+ },
+ "ember-3.jpg": {
+  "h": 3236,
+  "src": "img/stone/ember3.jpg",
+  "w": 2547
+ },
+ "ember-4.jpg": {
+  "h": 3501,
+  "src": "img/stone/ember4.jpg",
+  "w": 2671
+ },
+ "emergence-1.jpg": {
+  "h": 3519,
+  "src": "img/wood/emergence1.jpg",
+  "w": 2288
+ },
+ "emergence-2.jpg": {
+  "h": 3608,
+  "src": "img/wood/emergence2.jpg",
+  "w": 2004
+ },
+ "emergence-3.jpg": {
+  "h": 3672,
+  "src": "img/wood/emergence3.jpg",
+  "w": 2463
+ },
+ "emergence-4.jpg": {
+  "h": 3641,
+  "src": "img/wood/emergence4.jpg",
+  "w": 2204
+ },
+ "entre-nous-1.jpg": {
+  "h": 3626,
+  "src": "img/stone/entreNous1.jpg",
+  "w": 2648
+ },
+ "entre-nous-2.jpg": {
+  "h": 3639,
+  "src": "img/stone/entreNous2.jpg",
+  "w": 2508
+ },
+ "entre-nous-3.jpg": {
+  "h": 480,
+  "src": "img/stone/entrenous3.jpg",
+  "w": 241
+ },
+ "entre-nous-4.jpg": {
+  "h": 3557,
+  "src": "img/stone/entreNous4.jpg",
+  "w": 3031
+ },
+ "eye-to-eye-1.jpg": {
+  "h": 150,
+  "src": "img/stone/eyetoeye1.jpg",
+  "w": 100
+ },
+ "eye-to-eye-2.jpg": {
+  "h": 152,
+  "src": "img/stone/eyetoeye2.jpg",
+  "w": 100
+ },
+ "family-1.jpg": {
+  "h": 101,
+  "src": "img/stone/family1.jpg",
+  "w": 150
+ },
+ "flying-1.jpg": {
+  "h": 3269,
+  "src": "img/stone/flying1.jpg",
+  "w": 4171
+ },
+ "flying-2.jpg": {
+  "h": 3289,
+  "src": "img/stone/flying2.jpg",
+  "w": 2521
+ },
+ "flying-3.jpg": {
+  "h": 3251,
+  "src": "img/stone/flying3.jpg",
+  "w": 3775
+ },
+ "flying-4.jpg": {
+  "h": 3655,
+  "src": "img/stone/flying4.jpg",
+  "w": 2406
+ },
+ "free-form-1.jpg": {
+  "h": 3375,
+  "src": "img/stone/freeform1.jpg",
+  "w": 2830
+ },
+ "free-form-2.jpg": {
+  "h": 3425,
+  "src": "img/stone/freeform2.jpg",
+  "w": 3081
+ },
+ "free-form-3.jpg": {
+  "h": 3227,
+  "src": "img/stone/freeform3.jpg",
+  "w": 2979
+ },
+ "free-form-4.jpg": {
+  "h": 3222,
+  "src": "img/stone/freeform4.jpg",
+  "w": 2836
+ },
+ "generations-1.jpg": {
+  "h": 3447,
+  "src": "img/stone/generations1.jpg",
+  "w": 1893
+ },
+ "generations-2.jpg": {
+  "h": 3448,
+  "src": "img/stone/generations2.jpg",
+  "w": 1917
+ },
+ "generations-3.jpg": {
+  "h": 3564,
+  "src": "img/stone/generations3.jpg",
+  "w": 2026
+ },
+ "generations-4.jpg": {
+  "h": 3495,
+  "src": "img/stone/generations4.jpg",
+  "w": 2001
+ },
+ "hang-in-there-babe-1.jpg": {
+  "h": 152,
+  "src": "img/wood/hangintherebabe1.jpg",
+  "w": 100
+ },
+ "hang-in-there-babe-2.jpg": {
+  "h": 152,
+  "src": "img/wood/hangintherebabe2.jpg",
+  "w": 100
+ },
+ "heart-of-the-matter-1.jpg": {
+  "h": 3248,
+  "src": "img/stone/heartOfTheMatter1.jpg",
+  "w": 3068
+ },
+ "heart-of-the-matter-2.jpg": {
+  "h": 3309,
+  "src": "img/stone/heartOfTheMatter2.jpg",
+  "w": 2006
+ },
+ "heart-of-the-matter-3.jpg": {
+  "h": 3389,
+  "src": "img/stone/heartOfTheMatter3.jpg",
+  "w": 3076
+ },
+ "heart-of-the-matter-4.jpg": {
+  "h": 3504,
+  "src": "img/stone/heartOfTheMatter4.jpg",
+  "w": 2001
+ },
+ "inner-core-1.jpg": {
+  "h": 152,
+  "src": "img/wood/innercore1.jpg",
+  "w": 100
+ },
+ "inner-core-2.jpg": {
+  "h": 152,
+  "src": "img/wood/innercore2.jpg",
+  "w": 100
+ },
+ "lapis-1.jpg": {
+  "h": 3584,
+  "src": "img/stone/lapis1.jpg",
+  "w": 2343
+ },
+ "lapis-2.jpg": {
+  "h": 3556,
+  "src": "img/stone/lapis2.jpg",
+  "w": 2206
+ },
+ "lapis-3.jpg": {
+  "h": 3564,
+  "src": "img/stone/lapis3.jpg",
+  "w": 2500
+ },
+ "lapis-4.jpg": {
+  "h": 3574,
+  "src": "img/stone/lapis4.jpg",
+  "w": 2323
+ },
+ "legacy-1.jpg": {
+  "h": 3623,
+  "src": "img/stone/legacy1.jpg",
+  "w": 3052
+ },
+ "legacy-2.jpg": {
+  "h": 3555,
+  "src": "img/stone/legacy2.jpg",
+  "w": 2162
+ },
+ "legacy-3.jpg": {
+  "h": 3355,
+  "src": "img/stone/legacy3.jpg",
+  "w": 1965
+ },
+ "locked-in-city-1.jpg": {
+  "h": 152,
+  "src": "img/stone/lockedincity1.jpg",
+  "w": 100
+ },
+ "looking-towards-the-future-1.jpg": {
+  "h": 3574,
+  "src": "img/wood/lookingTowardsFuture1.jpg",
+  "w": 2356
+ },
+ "looking-towards-the-future-2.jpg": {
+  "h": 3579,
+  "src": "img/wood/lookingTowardsFuture2.jpg",
+  "w": 2476
+ },
+ "looking-towards-the-future-3.jpg": {
+  "h": 3529,
+  "src": "img/wood/lookingTowardsFuture3.jpg",
+  "w": 2379
+ },
+ "looking-towards-the-future-4.jpg": {
+  "h": 3628,
+  "src": "img/wood/lookingTowardsFuture4.jpg",
+  "w": 2229
+ },
+ "luna-landing-1.jpg": {
+  "h": 152,
+  "src": "img/stone/lunarlanding1.jpg",
+  "w": 100
+ },
+ "luna-landing-2.jpg": {
+  "h": 152,
+  "src": "img/stone/lunarlanding2.jpg",
+  "w": 100
+ },
+ "luna-landing-3.jpg": {
+  "h": 3061,
+  "src": "img/stone/lunarlanding3.jpg",
+  "w": 1245
+ },
+ "luna-persona-1.jpg": {
+  "h": 3567,
+  "src": "img/wood/lunaPersona1.jpg",
+  "w": 1611
+ },
+ "luna-persona-2.jpg": {
+  "h": 3672,
+  "src": "img/wood/lunaPersona2.jpg",
+  "w": 983
+ },
+ "luna-persona-3.jpg": {
+  "h": 3441,
+  "src": "img/wood/lunaPersona3.jpg",
+  "w": 1216
+ },
+ "luna-persona-4.jpg": {
+  "h": 3575,
+  "src": "img/wood/lunaPersona4.jpg",
+  "w": 1028
+ },
+ "mr-who-1.jpg": {
+  "h": 3392,
+  "src": "img/wood/mrWho1.jpg",
+  "w": 2480
+ },
+ "mr-who-2.jpg": {
+  "h": 3515,
+  "src": "img/wood/mrWho2.jpg",
+  "w": 2042
+ },
+ "mr-who-3.jpg": {
+  "h": 3197,
+  "src": "img/wood/mrWho3.jpg",
+  "w": 2652
+ },
+ "mr-who-4.jpg": {
+  "h": 3208,
+  "src": "img/wood/mrWho4.jpg",
+  "w": 1795
+ },
+ "my-bluestone-1.jpg": {
+  "h": 3672,
+  "src": "img/stone/myBluestone1.jpg",
+  "w": 2891
+ },
+ "my-bluestone-2.jpg": {
+  "h": 3399,
+  "src": "img/stone/myBluestone2.jpg",
+  "w": 2742
+ },
+ "my-bluestone-3.jpg": {
+  "h": 3672,
+  "src": "img/stone/myBluestone3.jpg",
+  "w": 3014
+ },
+ "my-bluestone-4.jpg": {
+  "h": 3672,
+  "src": "img/stone/myBluestone4.jpg",
+  "w": 2666
+ },
+ "my-pagoda-1.jpg": {
+  "h": 3436,
+  "src": "img/wood/myPagoda1.jpg",
+  "w": 1409
+ },
+ "oaxaca-1.jpg": {
+  "h": 3039,
+  "src": "img/stone/oaxaca1.jpg",
+  "w": 2652
+ },
+ "oaxaca-2.jpg": {
+  "h": 2923,
+  "src": "img/stone/oaxaca2.jpg",
+  "w": 2804
+ },
+ "oaxaca-3.jpg": {
+  "h": 3286,
+  "src": "img/stone/oaxaca3.jpg",
+  "w": 2955
+ },
+ "oaxaca-4.jpg": {
+  "h": 3162,
+  "src": "img/stone/oaxaca4.jpg",
+  "w": 3295
+ },
+ "orbits-1.jpg": {
+  "h": 102,
+  "src": "img/stone/orbits1.jpg",
+  "w": 153
+ },
+ "pietrasanta-1.jpg": {
+  "h": 1469,
+  "src": "img/stone/pietrasanta1.jpg",
+  "w": 800
+ },
+ "pink-lady-1.jpg": {
+  "h": 2966,
+  "src": "img/stone/pinkLady1.jpg",
+  "w": 1978
+ },
+ "pink-lady-2.jpg": {
+  "h": 3552,
+  "src": "img/stone/pinkLady2.jpg",
+  "w": 1481
+ },
+ "pink-lady-3.jpg": {
+  "h": 3560,
+  "src": "img/stone/pinkLady3.jpg",
+  "w": 2365
+ },
+ "pink-lady-4.jpg": {
+  "h": 3497,
+  "src": "img/stone/pinkLady4.jpg",
+  "w": 1937
+ },
+ "precious-1.jpg": {
+  "h": 156,
+  "src": "img/stone/precious1.jpg",
+  "w": 100
+ },
+ "rage-1.jpg": {
+  "h": 152,
+  "src": "img/stone/rage1.jpg",
+  "w": 100
+ },
+ "rage-2.jpg": {
+  "h": 3332,
+  "src": "img/stone/rage2.jpg",
+  "w": 1354
+ },
+ "rage-3.jpg": {
+  "h": 3408,
+  "src": "img/stone/rage3.jpg",
+  "w": 1291
+ },
+ "rage-4.jpg": {
+  "h": 3316,
+  "src": "img/stone/rage4.jpg",
+  "w": 1501
+ },
+ "rage-5.jpg": {
+  "h": 3181,
+  "src": "img/stone/rage5.jpg",
+  "w": 1355
+ },
+ "rage-6.jpg": {
+  "h": 3338,
+  "src": "img/stone/rage6.jpg",
+  "w": 1277
+ },
+ "ruins-1.jpg": {
+  "h": 152,
+  "src": "img/stone/ruins1.jpg",
+  "w": 100
+ },
+ "sail-away-1.jpg": {
+  "h": 152,
+  "src": "img/stone/sailaway1.jpg",
+  "w": 100
+ },
+ "sail-away-2.jpg": {
+  "h": 152,
+  "src": "img/stone/sailaway2.jpg",
+  "w": 100
+ },
+ "seeress-1.jpg": {
+  "h": 3572,
+  "src": "img/stone/seeress1.jpg",
+  "w": 3324
+ },
+ "seeress-2.jpg": {
+  "h": 3394,
+  "src": "img/stone/seeress2.jpg",
+  "w": 1686
+ },
+ "seeress-3.jpg": {
+  "h": 3239,
+  "src": "img/stone/seeress3.jpg",
+  "w": 2304
+ },
+ "seeress-4.jpg": {
+  "h": 3607,
+  "src": "img/stone/seeress4.jpg",
+  "w": 2988
+ },
+ "seeress-5.jpg": {
+  "h": 3530,
+  "src": "img/stone/seeress5.jpg",
+  "w": 1962
+ },
+ "serenity-1.jpg": {
+  "h": 3337,
+  "src": "img/stone/serenity1.jpg",
+  "w": 1214
+ },
+ "serenity-2.jpg": {
+  "h": 3558,
+  "src": "img/stone/serenity2.jpg",
+  "w": 1116
+ },
+ "serenity-3.jpg": {
+  "h": 3645,
+  "src": "img/stone/serenity3.jpg",
+  "w": 1233
+ },
+ "serenity-4.jpg": {
+  "h": 3575,
+  "src": "img/stone/serenity4.jpg",
+  "w": 1159
+ },
+ "shapely-you-1.jpg": {
+  "h": 479,
+  "src": "img/wood/shapelyyou1.JPG",
+  "w": 170
+ },
+ "shapely-you-2.jpg": {
+  "h": 480,
+  "src": "img/wood/shapelyyou2.JPG",
+  "w": 187
+ },
+ "shapely-you-3.jpg": {
+  "h": 480,
+  "src": "img/wood/shapelyyou3.JPG",
+  "w": 182
+ },
+ "shapely-you-4.jpg": {
+  "h": 480,
+  "src": "img/wood/shapelyyou4.JPG",
+  "w": 147
+ },
+ "she-and-he-1.jpg": {
+  "h": 1023,
+  "src": "img/Other/sheAndHeConcrete1.jpg",
+  "w": 1536
+ },
+ "study-in-white-1.jpg": {
+  "h": 152,
+  "src": "img/stone/studyinwhite1.jpg",
+  "w": 100
+ },
+ "study-in-white-2.jpg": {
+  "h": 152,
+  "src": "img/stone/studyinwhite2.jpg",
+  "w": 100
+ },
+ "support-1.jpg": {
+  "h": 152,
+  "src": "img/wood/support1.jpg",
+  "w": 100
+ },
+ "tension-1.jpg": {
+  "h": 3380,
+  "src": "img/stone/tension1.jpg",
+  "w": 2653
+ },
+ "tension-2.jpg": {
+  "h": 3574,
+  "src": "img/stone/tension2.jpg",
+  "w": 2199
+ },
+ "tension-3.jpg": {
+  "h": 3596,
+  "src": "img/stone/tension3.jpg",
+  "w": 2412
+ },
+ "tension-4.jpg": {
+  "h": 3535,
+  "src": "img/stone/tension4.jpg",
+  "w": 2720
+ },
+ "three-no-evil-1.jpg": {
+  "h": 152,
+  "src": "img/wood/threenoevil1.jpg",
+  "w": 100
+ },
+ "three-no-evil-2.jpg": {
+  "h": 152,
+  "src": "img/wood/threenoevil2.jpg",
+  "w": 100
+ },
+ "torso-i-1.jpg": {
+  "h": 100,
+  "src": "img/stone/torsoI1.jpg",
+  "w": 152
+ },
+ "torso-i-2.jpg": {
+  "h": 100,
+  "src": "img/stone/torsoI2.jpg",
+  "w": 151
+ },
+ "torso-iii-1.jpg": {
+  "h": 2851,
+  "src": "img/wood/torsoIII1.jpg",
+  "w": 1578
+ },
+ "torso-iii-2.jpg": {
+  "h": 2632,
+  "src": "img/wood/torsoIII2.jpg",
+  "w": 1067
+ },
+ "torso-iii-3.jpg": {
+  "h": 2808,
+  "src": "img/wood/torsoIII3.jpg",
+  "w": 1847
+ },
+ "torso-iii-4.jpg": {
+  "h": 2833,
+  "src": "img/wood/torsoIII4.jpg",
+  "w": 1244
+ },
+ "total-woman-1.jpg": {
+  "h": 156,
+  "src": "img/wood/totalwoman1.jpg",
+  "w": 100
+ },
+ "total-woman-2.jpg": {
+  "h": 155,
+  "src": "img/wood/totalwoman2.jpg",
+  "w": 100
+ },
+ "totem-1.jpg": {
+  "h": 153,
+  "src": "img/stone/totem1.jpg",
+  "w": 102
+ },
+ "totem-iv-1.jpg": {
+  "h": 784,
+  "src": "img/wood/totemIV1.jpg",
+  "w": 500
+ },
+ "totem-iv-2.jpg": {
+  "h": 3601,
+  "src": "img/wood/totemIV2.jpg",
+  "w": 1694
+ },
+ "totem-iv-3.jpg": {
+  "h": 3672,
+  "src": "img/wood/totemIV3.jpg",
+  "w": 2337
+ },
+ "totem-iv-4.jpg": {
+  "h": 457,
+  "src": "img/wood/totemIV4.jpg",
+  "w": 300
+ },
+ "trio-1.jpg": {
+  "h": 152,
+  "src": "img/stone/trio1.jpg",
+  "w": 100
+ },
+ "trio-2.jpg": {
+  "h": 152,
+  "src": "img/stone/trio2.jpg",
+  "w": 100
+ },
+ "union-1.jpg": {
+  "h": 3186,
+  "src": "img/stone/union1.jpg",
+  "w": 1930
+ },
+ "union-2.jpg": {
+  "h": 3316,
+  "src": "img/stone/union2.jpg",
+  "w": 1947
+ },
+ "union-3.jpg": {
+  "h": 3499,
+  "src": "img/stone/union3.jpg",
+  "w": 1637
+ },
+ "union-4.jpg": {
+  "h": 3543,
+  "src": "img/stone/union4.jpg",
+  "w": 1693
+ },
+ "whisper-1.jpg": {
+  "h": 153,
+  "src": "img/stone/whisper1.jpg",
+  "w": 102
+ },
+ "whither-thou-goest-1.jpg": {
+  "h": 152,
+  "src": "img/stone/whitherthougoest1.jpg",
+  "w": 100
+ },
+ "younger-than-springtime-1.jpg": {
+  "h": 3602,
+  "src": "img/stone/youngerThanSpringtime1.jpg",
+  "w": 2930
+ },
+ "younger-than-springtime-2.jpg": {
+  "h": 3672,
+  "src": "img/stone/youngerThanSpringtime2.jpg",
+  "w": 2601
+ },
+ "younger-than-springtime-3.jpg": {
+  "h": 480,
+  "src": "img/stone/youngerthanspringtime3.jpg",
+  "w": 169
+ },
+ "younger-than-springtime-4.jpg": {
+  "h": 3653,
+  "src": "img/stone/youngerThanSpringtime4.jpg",
+  "w": 2513
+ },
+ "youthful-twins-1.jpg": {
+  "h": 3577,
+  "src": "img/wood/youthfulTwins1.jpg",
+  "w": 2212
+ },
+ "youthful-twins-2.jpg": {
+  "h": 3641,
+  "src": "img/wood/youthfulTwins2.jpg",
+  "w": 1863
+ },
+ "youthful-twins-3.jpg": {
+  "h": 3672,
+  "src": "img/wood/youthfulTwins3.jpg",
+  "w": 2193
+ },
+ "youthful-twins-4.jpg": {
+  "h": 3637,
+  "src": "img/wood/youthfulTwins4.jpg",
+  "w": 2259
+ }
+}

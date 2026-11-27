@@ -1,348 +1,85 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Myra Lehman, sculptor</title>
+<meta name="description" content="Stone, wood and bronze sculpture by Myra Lehman of Rye, New York. Original works and commissions.">
+<link rel="canonical" href="https://sculpturemyra.com/contact.html">
+<meta property="og:title" content="Contact | Myra Lehman, sculptor">
+<meta property="og:description" content="Stone, wood and bronze sculpture by Myra Lehman of Rye, New York. Original works and commissions.">
+<meta property="og:type" content="website">
 
-	<head>
-		<!-- Required meta tags always come first -->
-		<meta charset='utf-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-		<meta http-equiv='x-ua-compatible' content='ie=edge'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#cfcfcb">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-		<link rel='stylesheet' href='css/bootstrapsocial.css'>
-		<link rel='stylesheet' href='css/styles.css'>
-		<link href='https://fonts.googleapis.com/css?family=Courgette|Source+Sans+Pro' rel='stylesheet'>
-		<script src='https://www.google.com/recaptcha/api.js'></script>
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<meta name="msapplication-TileColor" content="#522652">
-		<meta name="theme-color" content="#ffffff">
-		<title>Contact Myra</title>
-	</head>
-
-	<body>
-		<!-- Begin Body & Navbar -->
-		<nav class='navbar navbar-inverse navbar-expand-lg fixed-top'>
-			<div class='container'>
-				<!-- Container 1 -->
-				<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbar' aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-					<span class='fas fa-bars fa-lg'></span>
-				</button>
-				<!--     <a class='navbar-brand' href='#'> <img src='img/stone/union1.jpg' height='30' width='41'> </a>  removed navbar logo img -->
-				<div class='collapse navbar-collapse' id='navbar'>
-					<ul class='navbar-nav mr-auto'>
-						<li class='nav-item active'><a class='nav-link' href='./index.html'><span class='fa fa-home fa-lg'></span> Home</a></li>
-						<li class='dropdown hide'>
-							<button class='nav-item dropdown dropdown-toggle-split dropdown-toggle btn btn-link ' type='button' href='#' id='dropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-								Gallery
-							</button>
-							<div class='dropdown-menu' aria-labelledby='dropdownMenuLink'>
-								<a class='dropdown-item' href='../gallery.html'>All</a>
-								<div class='dropdown-divider'></div>
-								<a class='dropdown-item' href='../gallery/stone.html'>Stone</a>
-								<a class='dropdown-item' href='../gallery/wood.html'>Wood</a>
-								<a class='dropdown-item' href='../gallery/other.html'>Other</a>
-							</div>
-						</li>
-						<li class='nav-item'><a class='nav-link' href='./resume.html'><span class='fa fa-list fa-lg'></span> Resume</a></li>
-						<li class='nav-item'><a class='nav-link' href='./contact.html'><span class='fa fa-address-card fa-lg'></span> Contact</a></li>
-					</ul>
-				</div>
-				<!-- Close navbar collapse div-->
-			</div>
-			<!--Close container 1 -->
-		</nav>
-		<!-- End Nav -->
-
-		<div id='inquiryModal' class='modal fade' role='dialog' tabindex='-1'>
-			<div class='modal-dialog' role='content'>
-				<div class='modal-content'>
-					<div class='modal-header'>
-						<h4 class='modal-title'>Inquire</h4>
-						<button type='button' class='close' data-dismiss='modal'>
-							&times;
-						</button>
-					</div>
-					<!-- close modal header -->
-					<div class='modal-body'>
-						<div class='container-fluid'>
-							<form action="./php/sculpture_inquiry.php" method="post" name="form">
-
-								<div class='form-group'>
-									<label for='Name'>Name</label>
-									<input type='text' class='form-control' id='text' placeholder='First & Last Name' name="name" required>
-								</div>
-								<div class='form-group'>
-									<label for='exampleInputEmail3'>Email address</label>
-									<input type='email' name='email' class='form-control' id='exampleInputEmail3' placeholder='Enter email' required>
-								</div>
-								<div class="form-group">
-									<label for="sel1"><strong>Select Piece:</strong></label>
-									<select class="form-control" id="sel1" name='piece'>
-										<option> Custom </option>
-										<option>All Ears</option>
-										<option>All My Children</option>
-										<option>Caduceus</option>
-										<option>Cubic I</option>
-										<option>Cubic II</option>
-										<option>El Toro</option>
-										<option>Entre Nous</option>
-										<option>Eye To Eye</option>
-										<option>Family</option>
-										<option>Flying</option>
-										<option>Free Form</option>
-										<option>Generations</option>
-										<option>Heart of the Matter</option>
-										<option>Legacy</option>
-										<option>Locked In City</option>
-										<option>Luna Landing</option>
-										<option>Luna Persona</option>
-										<option>My Bluestone</option>
-										<option>Oaxaca</option>
-										<option>Orbits</option>
-										<option>Pietrasanta</option>
-										<option>Pink Lady</option>
-										<option>Precious</option>
-										<option>Rage</option>
-										<option>Ruins</option>
-										<option>Sail Away</option>
-										<option>Seeress</option>
-										<option>Serenity</option>
-										<option>Study in White</option>
-										<option>Tension</option>
-										<option>Torso I</option>
-										<option>Totem</option>
-										<option>Trio</option>
-										<option>Union</option>
-										<option>Whisper</option>
-										<option>Whither Thou Goest</option>
-										<option>Younger Than Springtime</option>
-									</select>
-								</div>
-								<!--
-
-							<div class="form form-group row">
-								<label for="material" class="col col-12">Material:</label>
-								<label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="1"><span class='custom-control-indicator' checked></span>Alabaster</label>
-								<label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="3"><span class='custom-control-indicator'></span>Teak</label>
-								<label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="4"><span class='custom-control-indicator'></span>Limestone</label>
-								<label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="5"><span class='custom-control-indicator'></span>Terracotta</label>
-								<label class='custom-control custom-radio'>  <input type="radio" class="custom-control-input" id="materialChoice" name="options" value="6"><span class='custom-control-indicator'></span>Other</label>
-							</div>
--->
-								<div class='form-group'>
-									<label>Desired Price</label>
-									<input type='text' class='form-control' name='price' placeholder='Enter Price'>
-								</div>
-
-								<div class='form-group'>
-									<label for='Description of piece'>Description Of Piece</label>
-									<textarea class='form-control' rows='4' name='msg' id='Description of piece' placeholder='Describe your request here...'></textarea>
-								</div>
-
-								<div class='form-group row mx-5 my-2' id='captcha'>
-									<div class="g-recaptcha" data-sitekey="6LfiwHEUAAAAAMUW375uK9w2Sbr72QZz0OtayF4-"></div>
-								</div>
-
-								<div class='form-group row mt-3'>
-									<button type='button' class='btn btn-default btn-sm' data-dismiss='modal'>Cancel</button>
-									<button type='submit' mt-4'>
-									<button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>
-									<button type='submit' class='btn btn-primary
-						</div>
-					</div>
-					<!-- close modal body -->
-				</div>
-				<!--close modal content -->
-			</div>
-			<!--close modal dialog -->
-		</div>
-		<!-- close modal -->
-		</div>
-
-		<header class='jumbotron'>
-			<!-- Website Header -->
-			<div class='container'>
-				<!-- Container 2 -->
-				<div class='row row-header'>
-					<div class='col col-12 col-sm-6'>
-						<h1 class='col col-12'>Myra's Sculpture Gallery</h1>
-						<p class='hidden-sm-down'>Contact Myra about an existing piece or custom piece using the form below. Connect with Myra on Social Media by following the appropriate links.</p>
-					</div>
-					<!-- Close H1 Title Div -->
-
-					<div class='col col-12 col-sm-3 offset-md-8'>
-						<a type='button' class='btn btn-block btn-sm btn-warning' data-toggle='modal' data-target='#inquiryModal' data-html='true' class='text-white' id='inquiryBtn'> Make an Inquiry</a>
-					</div>
-
-				</div>
-				<!-- Close Con2 row row header div -->
-		</header>
-		<!-- Close Header -->
-
-		<main>
-			<content class="container" id='contactForm row'>
-				<div class="row row-12">
-					<div class="card col col-12 col-md-8">
-						<div class="card-heading">
-							<h1 id="feedback-head">Get In Touch With Me</h1>
-						</div>
-
-						<div class="card-body">
-							<!-- Start form -->
-							<!-- Post request to php script -->
-							<form action="./php/contact_form.php" method="post" name="form">
-
-								<div class="form-group">
-									<input type="text" name="name" class="form-control" placeholder="Name" required><br>
-								</div>
-
-								<div class="form-group">
-									<input type="email" name="email" class="form-control" placeholder="Email" required><br>
-								</div>
-
-								<div class="form-group">
-									<input type="tel" name="phone" class="form-control" placeholder="Phone" required><br>
-								</div>
-
-								<div class="form-group">
-									<input type="subject" name="subject" class="form-control" placeholder="Subject" required><br>
-								</div>
-
-								<div class="form-group">
-									<textarea name="msg" class="form-control" placeholder="Feedback" rows="4" required></textarea><br>
-								</div>
-
-								<div class='form-group align-content-center' id='captcha'>
-									<div class="g-recaptcha mx-5" data-sitekey="6LfiwHEUAAAAAMUW375uK9w2Sbr72QZz0OtayF4-"></div>
-								</div>
-
-								<input type="submit" name="submit" value="Send" class="btn btn-lg btn-warning btn-block">
-
-							</form>
-						</div>
-					</div>
-				</div>
-			</content>
-
-
-			<div class='container'>
-				<h1>Connect With Me:</h1>
-				<p>
-					<a class='btn btn-social-icon btn-facebook' href='https://www.facebook.com/myra.lehman'><i class='fab fa-facebook'></i></a>
-					<a class='btn btn-social-icon btn-linkedin' href='https://www.linkedin.com/in/myra-lehman-8690094/'><i class='fab fa-linkedin'></i></a>
-				</p>
-			</div>
-		</main>
-
-
-
-		<footer class='footer container-fluid'>
-
-			<div class='row'>
-				<div class='col-5 col-sm-2 offset-1'>
-					<h5 class='mb-3 mt-2'>Links</h5>
-					<ul class='list-unstyled'>
-						<li><a href='./index.html'>Home</a></li>
-						<li><a href='./resume.html'>Resume</a></li>
-						<li><a href='./gallery.html'>Gallery</a></li>
-						<li><a href='./contact.html'>Contact</a></li>
-					</ul>
-				</div>
-				<div class='col-6 col-sm-5'>
-					<h5 class='mb-3 mt-2'>Location</h5>
-					<address>
-						Rye <br>
-						New York<br>
-					</address>
-				</div>
-				<div class='col col-sm-4 align-self-center'>
-					<div style='text-align:center'>
-						<a class='btn btn-social-icon btn-facebook' href='https://www.facebook.com/myra.lehman'>
-							<i class='fab fa-facebook'></i></a>
-						<a class='btn btn-social-icon btn-linkedin' href='https://www.linkedin.com/in/myra-lehman-8690094/'>
-							<i class='fab fa-linkedin'></i></a>
-						<a class='btn btn-social-icon fa-md' href='mailto:sculpturemyra@optonline.net'><i class='fas fa-envelope'></i></a>
-					</div>
-				</div>
-			</div>
-			<div class='row justify-content-center'>
-				<div class='col col-auto'>
-					<p> <a href="https://gordonholdingsco.com/" title='Visit Gordon Enterprises Business Consulting Website'>Created by Gordon Enterprises</a></p>
-				</div>
-			</div>
-		</footer>
-
-
-
-		<!-- jQuery first, then Tether, then Bootstrap JS. -->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js' crossorigin='anonymous'></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-		<script>
-			$('#inquiryModal').on('shown.bs.modal', function() {
-				$('#inquiryBtn').trigger('focus')
-			})
-		</script>
-		<!-- Submit form to php -->
-		<script>
-			$("form").on("submit", function(e) {
-				e.preventDefault();
-				if (grecaptcha.getResponse().length !== 0) {
-					$(".btn").prop("disabled", true);
-
-					$.ajax({
-						type: "post",
-						url: "./php/contact_form.php",
-						data: $("form").serialize(),
-						success: function() {
-
-						}
-					})
-					$(this).find("input[type=msg], textarea").val("");
-					$(this).find("input[type=tel], input").val("");
-					$(this).find("input[type=email], input").val("");
-					$(this).find("input[type=subject], input").val("");
-					$(this).find("input[type=text], input").val("");
-					$(".btn").attr("value", "Feedback Submitted!");
-				} else {
-					$(".btn").attr("value", "Click captcha");
-				}
-
-			})
-		</script>
-		<!-- Submit form to php -->
-		<script>
-			$("form").on("submit", function(e) {
-				e.preventDefault();
-				if (grecaptcha.getResponse().length !== 0) {
-					$(".btn").prop("disabled", true);
-
-					$.ajax({
-						type: "post",
-						url: "./php/sculpture_inquiry.php",
-						data: $("form").serialize(),
-						success: function() {
-
-						}
-					})
-					$(this).find("input[type=msg], textarea").val("");
-					$(this).find("input[type=phone], input").val("");
-					$(this).find("input[type=email], input").val("");
-					$(this).find("input[type=subject], input").val("");
-					$(this).find("input[type=piece], input").val("");
-					$(this).find("input[type=price], input").val("");
-					$(".btn").attr("value", "Inquiry Submitted!");
-				} else {
-					$(".btn").attr("value", "Click captcha");
-				}
-
-			})
-		</script>
-
-	</body>
-
+</head>
+<body data-root="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <a class="mark" href="index.html">Myra Lehman</a>
+  <nav aria-label="Main"><a href="gallery.html">Works</a><a href="resume.html">About</a><a href="contact.html" aria-current=page>Contact</a></nav>
+</header>
+<main id="main">
+<section class="contact wrap">
+  <div class="contact-intro">
+    <h1>Contact</h1>
+    <p>Ask about a sculpture you've seen here, or about commissioning a new piece. Myra replies by email.</p>
+    <figure class="contact-fig" id="piece-fig" hidden></figure>
+    <p class="direct">Or write directly to <a href="mailto:sculpturemyra@optonline.net">sculpturemyra@optonline.net</a></p>
+  </div>
+  <form class="form" id="contact-form" novalidate>
+    <div class="field">
+      <label for="f-piece">What is this about?</label>
+      <select id="f-piece" name="piece">
+        <option value="">A general question</option>
+        <option value="custom">Commissioning a new piece</option>
+        <optgroup label="A sculpture on this site"><option value="abstract-i" data-title="Abstract I">Abstract I ()</option><option value="all-ears" data-title="All Ears">All Ears (Alabaster)</option><option value="all-my-children" data-title="All My Children">All My Children (Limestone)</option><option value="athena-s-parthenon" data-title="Athena&#x27;s Parthenon">Athena&#x27;s Parthenon (Marble)</option><option value="birds-condo" data-title="Birds Condo">Birds Condo (Black Walnut)</option><option value="boy-with-future" data-title="Boy With Future">Boy With Future (Black Walnut)</option><option value="bronze-family" data-title="Bronze Family">Bronze Family (Bronze)</option><option value="caduceus" data-title="Caduceus">Caduceus (Alabaster)</option><option value="caduceus-bronze" data-title="Caduceus">Caduceus (Bronze)</option><option value="clay-family" data-title="Clay Family">Clay Family (Clay)</option><option value="cubic-i" data-title="Cubic I">Cubic I (Steatite)</option><option value="cubic-ii" data-title="Cubic II">Cubic II (Alabaster)</option><option value="egyptian-cat" data-title="Egyptian Cat">Egyptian Cat (Ceramic)</option><option value="el-toro" data-title="El Toro">El Toro (Alabaster)</option><option value="ember" data-title="Ember">Ember (Alabaster)</option><option value="emergence" data-title="Emergence">Emergence (Cherry)</option><option value="entre-nous" data-title="Entre Nous">Entre Nous (Alabaster)</option><option value="eye-to-eye" data-title="Eye To Eye">Eye To Eye (Alabaster)</option><option value="family" data-title="Family">Family (Alabaster)</option><option value="flying" data-title="Flying">Flying (Alabaster)</option><option value="free-form" data-title="Free Form">Free Form (Alabaster)</option><option value="generations" data-title="Generations">Generations (Alabaster)</option><option value="hang-in-there-babe" data-title="Hang In There Babe">Hang In There Babe (Applewood)</option><option value="heart-of-the-matter" data-title="Heart of the Matter">Heart of the Matter (Alabaster)</option><option value="inner-core" data-title="Inner core">Inner core (Cherry Wood)</option><option value="lapis" data-title="Lapis">Lapis (Lapis)</option><option value="legacy" data-title="Legacy">Legacy (Alabaster)</option><option value="locked-in-city" data-title="Locked In City">Locked In City (Steatite)</option><option value="looking-towards-the-future" data-title="Looking Towards The Future">Looking Towards The Future (Teak Wood)</option><option value="luna-landing" data-title="Luna Landing">Luna Landing (Limestone &amp; Wood)</option><option value="luna-persona" data-title="Luna Persona">Luna Persona (Cypress/Steatite)</option><option value="mr-who" data-title="Mr. Who">Mr. Who (Applewood)</option><option value="my-bluestone" data-title="My Bluestone">My Bluestone (Marble)</option><option value="my-pagoda" data-title="My Pagoda">My Pagoda (Black Walnut)</option><option value="oaxaca" data-title="Oaxaca">Oaxaca (Alabaster)</option><option value="orbits" data-title="Orbits">Orbits (Limestone)</option><option value="pietrasanta" data-title="Pietrasanta">Pietrasanta (Marble)</option><option value="pink-lady" data-title="Pink Lady">Pink Lady (Alabaster)</option><option value="precious" data-title="Precious">Precious (SW Soapstone)</option><option value="rage" data-title="Rage">Rage (Alabaster &amp; Teak)</option><option value="ruins" data-title="Ruins">Ruins (Alabaster)</option><option value="sail-away" data-title="Sail Away">Sail Away (Alaska Soapstone)</option><option value="seeress" data-title="Seeress">Seeress (Alabaster)</option><option value="serenity" data-title="Serenity">Serenity (Alabaster)</option><option value="shapely-you" data-title="Shapely You">Shapely You (Teak Wood)</option><option value="she-and-he" data-title="She and He">She and He (Concrete)</option><option value="study-in-white" data-title="Study in White">Study in White (Alabaster)</option><option value="support" data-title="Support">Support (Black Walnut)</option><option value="tension" data-title="Tension">Tension (Alabaster)</option><option value="three-no-evil" data-title="Three No Evil">Three No Evil (Lignum Vitae)</option><option value="torso-i" data-title="Torso I">Torso I (Alaska Soapstone)</option><option value="torso-iii" data-title="Torso III">Torso III (Black Walnut)</option><option value="total-woman" data-title="Total Woman">Total Woman (Cherry Wood)</option><option value="totem" data-title="Totem">Totem (Alaska Soapstone)</option><option value="totem-iv" data-title="Totem IV">Totem IV (Hawaiian Koa)</option><option value="trio" data-title="Trio">Trio (Steatite)</option><option value="union" data-title="Union">Union (Steatite)</option><option value="whisper" data-title="Whisper">Whisper (Alabaster)</option><option value="whither-thou-goest" data-title="Whither Thou Goest">Whither Thou Goest (Limestone)</option><option value="younger-than-springtime" data-title="Younger Than Springtime">Younger Than Springtime (Marble)</option><option value="youthful-twins" data-title="Youthful Twins">Youthful Twins (Teak Wood)</option></optgroup>
+      </select>
+    </div>
+    <div class="field-row">
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+    </div>
+    <div class="field-row">
+      <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="field" id="price-field"><label for="f-price">Budget <span class="opt">(optional)</span></label><input id="f-price" name="price" placeholder="e.g. $5,000 to $10,000"></div>
+    </div>
+    <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="msg" rows="6" required></textarea></div>
+    <div class="g-recaptcha" data-sitekey="6LfiwHEUAAAAAMUW375uK9w2Sbr72QZz0OtayF4-"></div>
+    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    <button class="btn" type="submit">Send message</button>
+  </form>
+</section>
+<script type="application/json" id="works-data">[{"slug":"abstract-i","title":"Abstract I","material":"","dimensions":"","cat":"Stone","pics":[["abstract-i-1.jpg",3015,3458],["abstract-i-2.jpg",2328,3463],["abstract-i-3.jpg",3234,3343],["abstract-i-4.jpg",2495,3579]]},{"slug":"all-ears","title":"All Ears","material":"Alabaster","dimensions":"14\"x21\"x10\"","cat":"Stone","pics":[["all-ears-1.jpg",4397,3467],["all-ears-2.jpg",3251,3354],["all-ears-3.jpg",4275,2827],["all-ears-4.jpg",2942,3396]]},{"slug":"all-my-children","title":"All My Children","material":"Limestone","dimensions":"16\"x9\"x8\"","cat":"Stone","pics":[["all-my-children-1.jpg",3515,3577]]},{"slug":"caduceus","title":"Caduceus","material":"Alabaster","dimensions":"23\"x5\"x5\"","cat":"Stone","pics":[["caduceus-1.jpg",1353,2935],["caduceus-2.jpg",1426,3040],["caduceus-3.jpg",1355,2884],["caduceus-4.jpg",1313,2947]]},{"slug":"athena-s-parthenon","title":"Athena's Parthenon","material":"Marble","dimensions":"","cat":"Stone","pics":[["athena-s-parthenon-1.jpg",2167,3216],["athena-s-parthenon-2.jpg",2338,2689],["athena-s-parthenon-3.jpg",2435,3113],["athena-s-parthenon-4.jpg",2704,2760]]},{"slug":"cubic-i","title":"Cubic I","material":"Steatite","dimensions":"14\"x18\"x7\"","cat":"Stone","pics":[["cubic-i-1.jpg",2177,2929],["cubic-i-2.jpg",2564,2641],["cubic-i-3.jpg",2963,2885],["cubic-i-4.jpg",2722,2885]]},{"slug":"cubic-ii","title":"Cubic II","material":"Alabaster","dimensions":"14\"x21\"x10\"","cat":"Stone","pics":[["cubic-ii-1.jpg",1761,3261],["cubic-ii-2.jpg",1991,3489],["cubic-ii-3.jpg",1746,3501],["cubic-ii-4.jpg",1211,3512],["cubic-ii-5.jpg",1713,3572]]},{"slug":"ember","title":"Ember","material":"Alabaster","dimensions":"","cat":"Stone","pics":[["ember-1.jpg",3008,3672],["ember-2.jpg",2815,3485],["ember-3.jpg",2547,3236],["ember-4.jpg",2671,3501]]},{"slug":"el-toro","title":"El Toro","material":"Alabaster","dimensions":"23\"x5\"x5\"","cat":"Stone","pics":[["el-toro-1.jpg",2787,3199],["el-toro-2.jpg",3665,2685],["el-toro-3.jpg",1933,3056],["el-toro-4.jpg",3721,2765]]},{"slug":"entre-nous","title":"Entre Nous","material":"Alabaster","dimensions":"23\"x7x9\"","cat":"Stone","pics":[["entre-nous-1.jpg",2648,3626],["entre-nous-2.jpg",2508,3639],["entre-nous-3.jpg",241,480],["entre-nous-4.jpg",3031,3557]]},{"slug":"eye-to-eye","title":"Eye To Eye","material":"Alabaster","dimensions":"23\"x7x9\"","cat":"Stone","pics":[["eye-to-eye-1.jpg",100,150],["eye-to-eye-2.jpg",100,152]]},{"slug":"family","title":"Family","material":"Alabaster","dimensions":"14\"x21\"x10\"","cat":"Stone","pics":[["family-1.jpg",150,101]]},{"slug":"flying","title":"Flying","material":"Alabaster","dimensions":"14\"x6\"x4\"","cat":"Stone","pics":[["flying-1.jpg",4171,3269],["flying-2.jpg",2521,3289],["flying-3.jpg",3775,3251],["flying-4.jpg",2406,3655]]},{"slug":"free-form","title":"Free Form","material":"Alabaster","dimensions":"12\"x13\"x4\"","cat":"Stone","pics":[["free-form-1.jpg",2830,3375],["free-form-2.jpg",3081,3425],["free-form-3.jpg",2979,3227],["free-form-4.jpg",2836,3222]]},{"slug":"generations","title":"Generations","material":"Alabaster","dimensions":"22\"x8\"x6\"","cat":"Stone","pics":[["generations-1.jpg",1893,3447],["generations-2.jpg",1917,3448],["generations-3.jpg",2026,3564],["generations-4.jpg",2001,3495]]},{"slug":"heart-of-the-matter","title":"Heart of the Matter","material":"Alabaster","dimensions":"20\"x16\"x10\"","cat":"Stone","pics":[["heart-of-the-matter-1.jpg",3068,3248],["heart-of-the-matter-2.jpg",2006,3309],["heart-of-the-matter-3.jpg",3076,3389],["heart-of-the-matter-4.jpg",2001,3504]]},{"slug":"lapis","title":"Lapis","material":"Lapis","dimensions":"","cat":"Stone","pics":[["lapis-1.jpg",2343,3584],["lapis-2.jpg",2206,3556],["lapis-3.jpg",2500,3564],["lapis-4.jpg",2323,3574]]},{"slug":"legacy","title":"Legacy","material":"Alabaster","dimensions":"20\"x7x8\"","cat":"Stone","pics":[["legacy-1.jpg",3052,3623],["legacy-2.jpg",2162,3555],["legacy-3.jpg",1965,3355]]},{"slug":"locked-in-city","title":"Locked In City","material":"Steatite","dimensions":"15\"x15\"x5\"","cat":"Stone","pics":[["locked-in-city-1.jpg",100,152]]},{"slug":"luna-landing","title":"Luna Landing","material":"Limestone & Wood","dimensions":"23\"x6.5x7\"","cat":"Stone","pics":[["luna-landing-1.jpg",100,152],["luna-landing-2.jpg",100,152],["luna-landing-3.jpg",1245,3061]]},{"slug":"my-bluestone","title":"My Bluestone","material":"Marble","dimensions":"18\"x7x6\"","cat":"Stone","pics":[["my-bluestone-1.jpg",2891,3672],["my-bluestone-2.jpg",2742,3399],["my-bluestone-3.jpg",3014,3672],["my-bluestone-4.jpg",2666,3672]]},{"slug":"oaxaca","title":"Oaxaca","material":"Alabaster","dimensions":"11\"x9\"x11\"","cat":"Stone","pics":[["oaxaca-1.jpg",2652,3039],["oaxaca-2.jpg",2804,2923],["oaxaca-3.jpg",2955,3286],["oaxaca-4.jpg",3295,3162]]},{"slug":"orbits","title":"Orbits","material":"Limestone","dimensions":"13\"x26\"x6\"","cat":"Stone","pics":[["orbits-1.jpg",153,102]]},{"slug":"pietrasanta","title":"Pietrasanta","material":"Marble","dimensions":"20\"x6\"x7\"","cat":"Stone","pics":[["pietrasanta-1.jpg",800,1469]]},{"slug":"pink-lady","title":"Pink Lady","material":"Alabaster","dimensions":"16\"x10x5\"","cat":"Stone","pics":[["pink-lady-1.jpg",1978,2966],["pink-lady-2.jpg",1481,3552],["pink-lady-3.jpg",2365,3560],["pink-lady-4.jpg",1937,3497]]},{"slug":"precious","title":"Precious","material":"SW Soapstone","dimensions":"16\"x4\"x4\"","cat":"Stone","pics":[["precious-1.jpg",100,156]]},{"slug":"rage","title":"Rage","material":"Alabaster & Teak","dimensions":"28\"x10\"x8\"","cat":"Stone","pics":[["rage-1.jpg",100,152],["rage-2.jpg",1354,3332],["rage-3.jpg",1291,3408],["rage-4.jpg",1501,3316],["rage-5.jpg",1355,3181],["rage-6.jpg",1277,3338]]},{"slug":"ruins","title":"Ruins","material":"Alabaster","dimensions":"15\"x17\"x7\"","cat":"Stone","pics":[["ruins-1.jpg",100,152]]},{"slug":"sail-away","title":"Sail Away","material":"Alaska Soapstone","dimensions":"31\"x12x5\"","cat":"Stone","pics":[["sail-away-1.jpg",100,152],["sail-away-2.jpg",100,152]]},{"slug":"seeress","title":"Seeress","material":"Alabaster","dimensions":"16\"x12\"x6\"","cat":"Stone","pics":[["seeress-1.jpg",3324,3572],["seeress-2.jpg",1686,3394],["seeress-3.jpg",2304,3239],["seeress-4.jpg",2988,3607],["seeress-5.jpg",1962,3530]]},{"slug":"serenity","title":"Serenity","material":"Alabaster","dimensions":"34\"x8\"x8\"","cat":"Stone","pics":[["serenity-1.jpg",1214,3337],["serenity-2.jpg",1116,3558],["serenity-3.jpg",1233,3645],["serenity-4.jpg",1159,3575]]},{"slug":"study-in-white","title":"Study in White","material":"Alabaster","dimensions":"28\"x10.5x9\"","cat":"Stone","pics":[["study-in-white-1.jpg",100,152],["study-in-white-2.jpg",100,152]]},{"slug":"tension","title":"Tension","material":"Alabaster","dimensions":"14\"x6\"x6\"","cat":"Stone","pics":[["tension-1.jpg",2653,3380],["tension-2.jpg",2199,3574],["tension-3.jpg",2412,3596],["tension-4.jpg",2720,3535]]},{"slug":"torso-i","title":"Torso I","material":"Alaska Soapstone","dimensions":"31\"x12x5\"","cat":"Stone","pics":[["torso-i-1.jpg",152,100],["torso-i-2.jpg",151,100]]},{"slug":"totem","title":"Totem","material":"Alaska Soapstone","dimensions":"34\"x10\"x9\"","cat":"Stone","pics":[["totem-1.jpg",102,153]]},{"slug":"trio","title":"Trio","material":"Steatite","dimensions":"27\"x10x9\"","cat":"Stone","pics":[["trio-1.jpg",100,152],["trio-2.jpg",100,152]]},{"slug":"union","title":"Union","material":"Steatite","dimensions":"25\"x10\"x10\"","cat":"Stone","pics":[["union-1.jpg",1930,3186],["union-2.jpg",1947,3316],["union-3.jpg",1637,3499],["union-4.jpg",1693,3543]]},{"slug":"whisper","title":"Whisper","material":"Alabaster","dimensions":"18\"x5.5\" (Round Base)","cat":"Stone","pics":[["whisper-1.jpg",102,153]]},{"slug":"whither-thou-goest","title":"Whither Thou Goest","material":"Limestone","dimensions":"45\"x15\"x7\"","cat":"Stone","pics":[["whither-thou-goest-1.jpg",100,152]]},{"slug":"younger-than-springtime","title":"Younger Than Springtime","material":"Marble","dimensions":"17.5\"x4x5\"","cat":"Stone","pics":[["younger-than-springtime-1.jpg",2930,3602],["younger-than-springtime-2.jpg",2601,3672],["younger-than-springtime-3.jpg",169,480],["younger-than-springtime-4.jpg",2513,3653]]},{"slug":"birds-condo","title":"Birds Condo","material":"Black Walnut","dimensions":"68\"x10.5\"x10.5\"","cat":"Wood","pics":[["birds-condo-1.jpg",100,150]]},{"slug":"boy-with-future","title":"Boy With Future","material":"Black Walnut","dimensions":"36\"x8\"x6\"","cat":"Wood","pics":[["boy-with-future-1.jpg",100,152],["boy-with-future-2.jpg",100,152]]},{"slug":"hang-in-there-babe","title":"Hang In There Babe","material":"Applewood","dimensions":"68\"x27\"x17\"","cat":"Wood","pics":[["hang-in-there-babe-1.jpg",100,152],["hang-in-there-babe-2.jpg",100,152]]},{"slug":"emergence","title":"Emergence","material":"Cherry","dimensions":"","cat":"Wood","pics":[["emergence-1.jpg",2288,3519],["emergence-2.jpg",2004,3608],["emergence-3.jpg",2463,3672],["emergence-4.jpg",2204,3641]]},{"slug":"inner-core","title":"Inner core","material":"Cherry Wood","dimensions":"26\"x16\"x12\"","cat":"Wood","pics":[["inner-core-1.jpg",100,152],["inner-core-2.jpg",100,152]]},{"slug":"looking-towards-the-future","title":"Looking Towards The Future","material":"Teak Wood","dimensions":"21\"x6\"x4\"","cat":"Wood","pics":[["looking-towards-the-future-1.jpg",2356,3574],["looking-towards-the-future-2.jpg",2476,3579],["looking-towards-the-future-3.jpg",2379,3529],["looking-towards-the-future-4.jpg",2229,3628]]},{"slug":"luna-persona","title":"Luna Persona","material":"Cypress/Steatite","dimensions":"33\"x12\"x5\"","cat":"Wood","pics":[["luna-persona-1.jpg",1611,3567],["luna-persona-2.jpg",983,3672],["luna-persona-3.jpg",1216,3441],["luna-persona-4.jpg",1028,3575]]},{"slug":"mr-who","title":"Mr. Who","material":"Applewood","dimensions":"18\"x15\"x6\"","cat":"Wood","pics":[["mr-who-1.jpg",2480,3392],["mr-who-2.jpg",2042,3515],["mr-who-3.jpg",2652,3197],["mr-who-4.jpg",1795,3208]]},{"slug":"my-pagoda","title":"My Pagoda","material":"Black Walnut","dimensions":"32\"x9\"x10\"","cat":"Wood","pics":[["my-pagoda-1.jpg",1409,3436]]},{"slug":"shapely-you","title":"Shapely You","material":"Teak Wood","dimensions":"21\"x6\"x4\"","cat":"Wood","pics":[["shapely-you-1.jpg",170,479],["shapely-you-2.jpg",187,480],["shapely-you-3.jpg",182,480],["shapely-you-4.jpg",147,480]]},{"slug":"support","title":"Support","material":"Black Walnut","dimensions":"64\"x17\"x3\"","cat":"Wood","pics":[["support-1.jpg",100,152]]},{"slug":"three-no-evil","title":"Three No Evil","material":"Lignum Vitae","dimensions":"67\"x10\"x10\"","cat":"Wood","pics":[["three-no-evil-1.jpg",100,152],["three-no-evil-2.jpg",100,152]]},{"slug":"torso-iii","title":"Torso III","material":"Black Walnut","dimensions":"26\"x11\"x9\"","cat":"Wood","pics":[["torso-iii-1.jpg",1578,2851],["torso-iii-2.jpg",1067,2632],["torso-iii-3.jpg",1847,2808],["torso-iii-4.jpg",1244,2833]]},{"slug":"total-woman","title":"Total Woman","material":"Cherry Wood","dimensions":"33\"x6\"x4\"","cat":"Wood","pics":[["total-woman-1.jpg",100,156],["total-woman-2.jpg",100,155]]},{"slug":"totem-iv","title":"Totem IV","material":"Hawaiian Koa","dimensions":"34\"x16\"x8\"","cat":"Wood","pics":[["totem-iv-1.jpg",500,784],["totem-iv-2.jpg",1694,3601],["totem-iv-3.jpg",2337,3672],["totem-iv-4.jpg",300,457]]},{"slug":"youthful-twins","title":"Youthful Twins","material":"Teak Wood","dimensions":"21\"x6\"x4\"","cat":"Wood","pics":[["youthful-twins-1.jpg",2212,3577],["youthful-twins-2.jpg",1863,3641],["youthful-twins-3.jpg",2193,3672],["youthful-twins-4.jpg",2259,3637]]},{"slug":"caduceus-bronze","title":"Caduceus","material":"Bronze","dimensions":"23\"x5\"x5\"","cat":"Bronze, clay & more","pics":[["caduceus-bronze-1.jpg",1742,3131],["caduceus-bronze-2.jpg",1676,3362],["caduceus-bronze-3.jpg",1559,3293],["caduceus-bronze-4.jpg",1598,3281]]},{"slug":"bronze-family","title":"Bronze Family","material":"Bronze","dimensions":"12\"x10\"x10\"","cat":"Bronze, clay & more","pics":[["bronze-family-1.jpg",3281,3349],["bronze-family-2.jpg",3233,3439],["bronze-family-3.jpg",3050,3305],["bronze-family-4.jpg",3278,3323],["bronze-family-5.jpg",3324,3592]]},{"slug":"clay-family","title":"Clay Family","material":"Clay","dimensions":"12\"x12\"x16\"","cat":"Bronze, clay & more","pics":[["clay-family-1.jpg",2696,3539],["clay-family-2.jpg",2806,3358],["clay-family-3.jpg",2398,3593],["clay-family-4.jpg",3213,3672]]},{"slug":"egyptian-cat","title":"Egyptian Cat","material":"Ceramic","dimensions":"12\"x10\"x10\"","cat":"Bronze, clay & more","pics":[["egyptian-cat-1.jpg",2106,3593],["egyptian-cat-2.jpg",2485,3487],["egyptian-cat-3.jpg",1645,3429],["egyptian-cat-4.jpg",1979,3416]]},{"slug":"she-and-he","title":"She and He","material":"Concrete","dimensions":"6'2x18\"x23\", 7'x19\"x25\"","cat":"Bronze, clay & more","pics":[["she-and-he-1.jpg",1536,1023]]}]</script>
+</main>
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div>
+      <p class="mark">Myra Lehman</p>
+      <p>Sculptor, Rye, New York</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="gallery.html">Works</a></li>
+      <li><a href="resume.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul class="foot-links">
+      <li><a href="mailto:sculpturemyra@optonline.net">sculpturemyra@optonline.net</a></li>
+      <li><a href="https://www.facebook.com/myra.lehman" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/in/myra-lehman-8690094/" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+  <p class="credit"><a href="https://gordonholdingsco.com/">Site by Gordon Enterprises</a></p>
+</footer>
+<script src="js/site.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
 </html>
